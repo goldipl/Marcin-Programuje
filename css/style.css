@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+p,
+ol li {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media (max-width: 800px) {
+    p,
+    ol li {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+a {
+    color: white;
+}
+
+.bluelink {
+    color: rgb(35, 47, 94);
+}
+
+p {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+section ul li {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+img {
+    padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.footerp {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.aNavList {
+    font-family: 'Arsenal', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+aside>nav>ul>li>a {
+    padding: 10px;
+    transition: .3s linear;
+}
+
+aside>nav>ul>li>a:hover {
+    background: rgb(48, 62, 119);
+    padding: 4px;
+}
+
+.navList {
+    padding: 0.6rem;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul {
+    padding: 2rem;
+}
+
+ul li {
+    text-align: center;
+}
+
+.header {
+    height: 100vh;
+    background-color: rgb(35, 47, 94);
+    color: white;
+}
+
+.whiteSection {
+    background-color: #fff;
+    color: black;
+}
+
+.colorSection {
+    background-color: rgb(35, 47, 94);
+    color: white;
+}
+
+section {
+    padding: 1.5rem;
+}
+
+.menuText {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-bottom: 1.6rem;
+    color: white;
+}
+
+.lamdaLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.column {
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+
+/*///////////////BURGER MENU - START//////////////*/
+
+.burgerMenu {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    line-height: 50px;
+    transition: .3s linear;
+    z-index: 4;
+}
+
+.burgerMenu i {
+    color: black;
+}
+
+.burgerMenu:hover {
+    cursor: pointer;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -400px;
+    width: 400px;
+    background-color: rgb(27, 38, 83);
+    transition: .3s linear;
+    z-index: 3;
+}
+
+.fas {
+    display: none;
+}
+
+i.show {
+    display: block;
+}
+
+aside.show {
+    left: 0;
+}
+
+@media (min-width: 1025px) {
+    aside {
+        left: -600px;
+        width: 600px;
+    }
+    nav ul {
+        font-size: 34px;
+    }
+    ul li {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 1024px) {
+    nav ul {
+        font-size: 38px;
+    }
+    ul li {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 380px) {
+    aside {
+        left: -300px;
+        width: 300px;
+    }
+    nav ul {
+        font-size: 22px;
+    }
+    ul li {
+        font-size: 16px;
+    }
+}
+
+
+/*///////////////BURGER MENU - END//////////////*/
+
+
+/* BOUNCING ARROW */
+
+.contentDiv {
+    background-color: rgb(35, 47, 94);
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes bouncing {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 20px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.arrow {
+    position: absolute;
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 70px;
+    left: calc(50% - 35px);
+    width: 70px;
+    z-index: 2;
+}
+
+
+/* CENTERED TEXT ON MAIN PAGE */
+
+h1.centeredText {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5rem;
+    z-index: 1;
+}
+
+
+/* SMALLER CENTERED TEXT ON MAIN PAGE ON SMARTPHONES 
+AND SMALLER DEVICES ALSO */
+
+@media (min-width: 1024px) {
+    h1.centeredText {
+        font-size: 5.0rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    h1.centeredText {
+        font-size: 3.5rem;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 639px) {
+    h1.centeredText {
+        font-size: 2.5rem;
+        word-wrap: break-word;
+    }
+}
+
+
+/* SMALLER H1 TEXT ON MAIN PAGE ON SMARTPHONES 
+AND SMALLER DEVICES ALSO */
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 639px) {
+    h1 {
+        font-size: 2.0rem;
+    }
+}
+
+
+/* CENTERED TEXT ON THE REST PAGES */
+
+h1.centeredText02 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5rem;
+    z-index: 1;
+}
+
+
+/* SMALLER CENTERED TEXT ON THE REST PAGES ON SMARTPHONES 
+AND SMALLER DEVICES ALSO */
+
+@media (min-width: 1024px) {
+    h1.centeredText02 {
+        font-size: 5.0rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    h1.centeredText02 {
+        top: 30%;
+        font-size: 3.5rem;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 639px) {
+    h1.centeredText02 {
+        font-size: 2.5rem;
+        word-wrap: break-word;
+    }
+}
+
+
+/* IMG */
+
+.contentDiv .brotherSisterImg {
+    position: absolute;
+    left: calc(50% - 50vh);
+    opacity: 0.5;
+    bottom: 0;
+    width: 100vh;
+}
+
+@media (max-width: 1024px) {
+    .contentDiv .brotherSisterImg {
+        left: calc(50% - 30vh);
+        width: 60vh;
+    }
+    img {
+        width: 90%;
+    }
+    .lamdaLogo {
+        width: 30%;
+    }
+}
+
+@media (max-width: 640px) {
+    .contentDiv .brotherSisterImg {
+        left: calc(50% - 20vh);
+        width: 40vh;
+    }
+    img {
+        width: 90%;
+    }
+    .lamdaLogo {
+        width: 50%;
+    }
+}
+
+
+/* FOOTER SMALL TEXT */
+
+.smallText {
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.middleText {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* HISTORY TEXT */
+
+.hText {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+
+/* LIST */
+
+.lilist {
+    padding: 0.1%;
+    list-style: none;
+}
+
+
+/* H2 BORDER */
+
+.border {
+    border: 1px solid white;
+    width: 25%;
+    margin: auto;
+}
+
+@media (max-width: 840px) {
+    .border {
+        width: 50%;
+    }
+}
+
+
+/* /////////MAIL IMG///////// */
+
+.mailimg {
+    width: 20%;
+}
+
+.mailimg:hover {
+    -moz-box-shadow: 0 0 30px pink;
+    -webkit-box-shadow: 0 0 30px pink;
+    box-shadow: 0 0 30px pink;
+}
+
+@media (max-width: 840px) {
+    .mailimg {
+        width: 40%;
+    }
+}
