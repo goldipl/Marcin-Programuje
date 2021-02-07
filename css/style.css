@@ -186,7 +186,7 @@ section {
 }
 
 .burgerMenu i {
-    color: black;
+    color: #5f30ae;
 }
 
 .burgerMenu:hover {
@@ -295,7 +295,7 @@ h1.centeredText {
     left: 0;
     right: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 4.5rem;
+    font-size: 4.0rem;
     z-index: 1;
 }
 
@@ -305,7 +305,7 @@ AND SMALLER DEVICES ALSO */
 
 @media (min-width: 1024px) {
     h1.centeredText {
-        font-size: 5.0rem;
+        font-size: 4.0rem;
     }
 }
 
