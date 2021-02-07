@@ -185,8 +185,9 @@ section {
     z-index: 4;
 }
 
-.burgerMenu i {
-    color: #5f30ae;
+.burgerMenu .burgerColor,
+.burgerMenu .crossColor {
+    color: #0a93e2;
 }
 
 .burgerMenu:hover {
