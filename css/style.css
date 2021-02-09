@@ -381,7 +381,7 @@ AND SMALLER DEVICES ALSO */
 
 /* IMG */
 
-.contentDiv .brotherSisterImg {
+.contentDiv .headerImg {
     position: absolute;
     left: calc(50% - 50vh);
     opacity: 0.5;
@@ -390,7 +390,7 @@ AND SMALLER DEVICES ALSO */
 }
 
 @media (max-width: 1024px) {
-    .contentDiv .brotherSisterImg {
+    .contentDiv .headerImg {
         left: calc(50% - 30vh);
         width: 60vh;
     }
@@ -403,7 +403,7 @@ AND SMALLER DEVICES ALSO */
 }
 
 @media (max-width: 640px) {
-    .contentDiv .brotherSisterImg {
+    .contentDiv .headerImg {
         left: calc(50% - 20vh);
         width: 40vh;
     }
