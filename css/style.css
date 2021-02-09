@@ -54,8 +54,8 @@ section ul li {
 
 h1 {
     text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.4rem;
     text-transform: uppercase;
@@ -443,12 +443,4 @@ AND SMALLER DEVICES ALSO */
 .techLogoImg {
     width: 90px;
     height: auto;
-}
-
-
-/* H1 PADDING */
-
-.h1padding {
-    padding-top: 40px;
-    padding-bottom: 60px;
 }
