@@ -117,7 +117,7 @@ ul li {
 
 .header {
     height: 100vh;
-    background-color: rgb(35, 47, 94);
+    background: linear-gradient(45deg, rgb(35, 47, 94), rgb(78, 27, 114));
     color: white;
 }
 
@@ -127,7 +127,7 @@ ul li {
 }
 
 .colorSection {
-    background-color: rgb(35, 47, 94);
+    background: linear-gradient(45deg, rgb(35, 47, 94), rgb(78, 27, 114));
     color: white;
 }
 
@@ -255,7 +255,7 @@ aside.show {
 /* BOUNCING ARROW */
 
 .contentDiv {
-    background-color: rgb(35, 47, 94);
+    background-color: transparent;
     height: 200px;
     width: 200px;
 }
@@ -488,6 +488,65 @@ AND SMALLER DEVICES ALSO */
     border: 1px solid black;
     overflow: hidden;
     text-align: center;
+    color: white;
+}
+
+.contPJava {
+    position: relative;
+    background: linear-gradient(45deg, rgb(35, 47, 94), rgb(78, 27, 114));
+    display: block;
+    width: 50vh;
+    height: 24vh;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.contPJS {
+    position: relative;
+    background: linear-gradient(45deg, rgb(223, 210, 39), rgb(211, 124, 24));
+    display: block;
+    width: 50vh;
+    height: 24vh;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.contPPython {
+    position: relative;
+    background: linear-gradient(45deg, #407eaf 30%, #ffdf5a);
+    display: block;
+    width: 50vh;
+    height: 24vh;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+
+/* Centered text over an Image from Portfolio */
+
+.centeredTextPI {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4% 35%;
+}
+
+@media (max-width:1024px) {
+    .centeredTextPI {
+        font-size: 18px;
+    }
 }
 
 .contImg {
@@ -495,7 +554,9 @@ AND SMALLER DEVICES ALSO */
     height: auto;
 }
 
-.contP:hover {
+.contP:hover,
+.contPJava:hover,
+.contPJS:hover {
     opacity: 0.5;
     cursor: pointer;
 }
