@@ -556,13 +556,17 @@ AND SMALLER DEVICES ALSO */
 
 .contP:hover,
 .contPJava:hover,
-.contPJS:hover {
+.contPJS:hover,
+.contPPython:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
 @media (max-width:500px) {
-    .contP {
+    .contP,
+    .contPJava,
+    .contPJS,
+    .contPPython {
         width: 45vh;
         height: 21vh;
     }
