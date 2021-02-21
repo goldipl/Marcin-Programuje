@@ -530,6 +530,17 @@ AND SMALLER DEVICES ALSO */
     color: white;
 }
 
+.contCert {
+    display: block;
+    width: 50vh;
+    height: 38vh;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
 
 /* Centered text over an Image from Portfolio */
 
@@ -557,8 +568,18 @@ AND SMALLER DEVICES ALSO */
 .contP:hover,
 .contPJava:hover,
 .contPJS:hover,
-.contPPython:hover {
-    opacity: 0.5;
+.contPPython:hover,
+.contCert:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.contP img:hover,
+.contPJava img:hover,
+.contPJS img:hover,
+.contPPython img:hover,
+.contCert img:hover {
+    scale: 1.05;
     cursor: pointer;
 }
 
@@ -569,6 +590,13 @@ AND SMALLER DEVICES ALSO */
     .contPPython {
         width: 45vh;
         height: 21vh;
+    }
+}
+
+@media (max-width:500px) {
+    .contCert {
+        width: 45vh;
+        height: 35vh;
     }
 }
 
