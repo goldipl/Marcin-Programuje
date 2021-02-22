@@ -527,12 +527,14 @@ AND SMALLER DEVICES ALSO */
     height: auto;
 }
 
-.contP:hover {
+.contP:hover,
+.contCert img:hover {
     opacity: 0.6;
     cursor: pointer;
 }
 
-.contP img:hover {
+.contP img:hover,
+.contCert img:hover {
     scale: 1.05;
     cursor: pointer;
 }
