@@ -491,45 +491,6 @@ AND SMALLER DEVICES ALSO */
     color: white;
 }
 
-.contPJava {
-    position: relative;
-    background: linear-gradient(45deg, rgb(35, 47, 94), rgb(78, 27, 114));
-    display: block;
-    width: 50vh;
-    height: 24vh;
-    margin: 20px;
-    border: 1px solid black;
-    overflow: hidden;
-    text-align: center;
-    color: white;
-}
-
-.contPJS {
-    position: relative;
-    background: linear-gradient(45deg, rgb(223, 210, 39), rgb(211, 124, 24));
-    display: block;
-    width: 50vh;
-    height: 24vh;
-    margin: 20px;
-    border: 1px solid black;
-    overflow: hidden;
-    text-align: center;
-    color: white;
-}
-
-.contPPython {
-    position: relative;
-    background: linear-gradient(45deg, #407eaf 30%, #ffdf5a);
-    display: block;
-    width: 50vh;
-    height: 24vh;
-    margin: 20px;
-    border: 1px solid black;
-    overflow: hidden;
-    text-align: center;
-    color: white;
-}
-
 .contCert {
     display: block;
     width: 50vh;
@@ -544,7 +505,8 @@ AND SMALLER DEVICES ALSO */
 
 /* Centered text over an Image from Portfolio */
 
-.centeredTextPI {
+
+/* .centeredTextPI {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -558,36 +520,25 @@ AND SMALLER DEVICES ALSO */
     .centeredTextPI {
         font-size: 18px;
     }
-}
+} */
 
 .contImg {
     max-width: 100%;
     height: auto;
 }
 
-.contP:hover,
-.contPJava:hover,
-.contPJS:hover,
-.contPPython:hover,
-.contCert:hover {
+.contP:hover {
     opacity: 0.6;
     cursor: pointer;
 }
 
-.contP img:hover,
-.contPJava img:hover,
-.contPJS img:hover,
-.contPPython img:hover,
-.contCert img:hover {
+.contP img:hover {
     scale: 1.05;
     cursor: pointer;
 }
 
 @media (max-width:500px) {
-    .contP,
-    .contPJava,
-    .contPJS,
-    .contPPython {
+    .contP {
         width: 45vh;
         height: 21vh;
     }
