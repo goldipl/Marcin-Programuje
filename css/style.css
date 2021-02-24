@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -529,7 +530,9 @@ AND SMALLER DEVICES ALSO */
 
 .contP:hover,
 .contCert img:hover {
-    opacity: 0.6;
+    box-shadow: 0 0 15px rgb(78, 27, 114);
+    -moz-box-shadow: 0 0 15px rgb(78, 27, 114);
+    -webkit-box-shadow: 0 0 15px rgb(78, 27, 114);
     cursor: pointer;
 }
 
