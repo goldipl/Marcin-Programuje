@@ -1,5 +1,6 @@
-// StackOverflow Source path: 
-// https://stackoverflow.com/questions/62678282/add-delay-when-index-increase/62678368#62678368
+// Source path: 
+// https://www.youtube.com/watch?v=PuOGBacTYAY
+// @author Dev Ed
 
 const texts = ['Jestem Marcin.',
     'Jestem Web Developerem',
