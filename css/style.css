@@ -536,9 +536,17 @@ AND SMALLER DEVICES ALSO */
     cursor: pointer;
 }
 
+img {
+    transition: all .2s linear;
+}
+
+.contCert img:hover {
+    transform: scale(1.05);
+}
+
 .contP img:hover,
 .contCert img:hover {
-    scale: 1.05;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
