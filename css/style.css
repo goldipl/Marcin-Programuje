@@ -542,11 +542,13 @@ img {
 
 .contCert img:hover {
     transform: scale(1.05);
+    -webkit-transform: scale(1.05);
 }
 
 .contP img:hover,
 .contCert img:hover {
     transform: scale(1.05);
+    -webkit-transform: scale(1.05);
     cursor: pointer;
 }
 
