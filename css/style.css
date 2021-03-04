@@ -146,7 +146,7 @@ section {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding-bottom: 1.6rem;
-    color: white;
+    color: goldenrod;
 }
 
 
@@ -187,7 +187,7 @@ section {
 
 .burgerMenu .burgerColor,
 .burgerMenu .crossColor {
-    color: #0a93e2;
+    color: goldenrod;
 }
 
 .burgerMenu:hover {
