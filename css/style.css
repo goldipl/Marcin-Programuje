@@ -574,9 +574,10 @@ img {
     font-size: 46px;
 }
 
-@media (min-width:1000px) {
+
+/* @media (min-width:1000px) {
     .fa-bars::before {
         content: "MENU ";
         font-family: 'Arsenal', sans-serif;
     }
-}
+} */
