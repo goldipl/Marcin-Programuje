@@ -121,7 +121,7 @@ ul li {
 
 .header {
     height: 100vh;
-    background-image: linear-gradient( rgba(8, 8, 31, 0.73), rgba(8, 8, 31, 0.83)), url("https://raw.githubusercontent.com/goldipl/Marcin-Programuje/main/img/backimg.jpg");
+    background-image: url("https://raw.githubusercontent.com/goldipl/Marcin-Programuje/main/img/backimg.jpg");
     color: white;
 }
 
