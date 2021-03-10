@@ -593,7 +593,7 @@ img {
 
 /* MOBILE - Burger MENU - text under hamburger 'icon' */
 
-@media (max-width:500px) {
+@media (max-width:900px) {
     .burgerColor:after {
         bottom: -20px;
         right: -9px;
