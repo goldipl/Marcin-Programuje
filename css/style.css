@@ -575,9 +575,17 @@ img {
 }
 
 
-/* @media (min-width:1000px) {
-    .fa-bars::before {
-        content: "MENU ";
-        font-family: 'Arsenal', sans-serif;
-    }
-} */
+/* Burger MENU - text under hamburger 'icon' */
+
+.burgerColor:after {
+    position: relative;
+}
+
+.burgerColor:after {
+    content: "MENU";
+    position: absolute;
+    bottom: -30px;
+    right: -13px;
+    font-size: 26px;
+    font-family: 'Arsenal', sans-serif;
+}
