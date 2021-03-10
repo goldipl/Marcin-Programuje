@@ -589,3 +589,19 @@ img {
     font-size: 26px;
     font-family: 'Arsenal', sans-serif;
 }
+
+
+/* MOBILE - Burger MENU - text under hamburger 'icon' */
+
+@media (max-width:500px) {
+    .burgerColor:after {
+        bottom: -20px;
+        right: -9px;
+        font-size: 18px;
+    }
+    .burgerMenu {
+        top: 25px;
+        right: 30px;
+        font-size: 30px;
+    }
+}
