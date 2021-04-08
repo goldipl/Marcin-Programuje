@@ -467,7 +467,8 @@ AND SMALLER DEVICES ALSO */
 }
 
 .fab:hover,
-.far:hover {
+.far:hover,
+.bluelink:hover {
     color: goldenrod;
 }
 
