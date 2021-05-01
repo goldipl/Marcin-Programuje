@@ -13,8 +13,10 @@ Project was created with:
 * JavaScript
 
 ## Screens
-* Desktop version :computer:
+* Desktop version :computer:     
+
 ![Screenshot](Screen01.jpg) 
 
-* Mobile version :iphone:
+* Mobile version :iphone:     
+
 ![Screenshot](Screen02.jpg) 
