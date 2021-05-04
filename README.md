@@ -2,7 +2,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Screens](#screens)
-* [Live](#live)
+* [Live](#live-star2)
 
 ## General info
 My new webpage.
