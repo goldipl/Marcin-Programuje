@@ -10,7 +10,7 @@ My new webpage.
 ## Technologies
 Project was created with:
 * HTML5
-* CSS3
+* SCSS
 * JavaScript
 
 ## Screens
