@@ -609,7 +609,9 @@ img {
 
 .blockedBody {
     height: 100%;
-    overflow-scrolling: none;
+    overflow: none;
+    -webkit-overflow-scrolling: none;
+    -ms-overflow-style: none;
     position: fixed;
     left: 0;
     right: 0;
