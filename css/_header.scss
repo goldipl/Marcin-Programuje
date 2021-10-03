@@ -1,0 +1,76 @@
+/* CENTERED TEXT ON MAIN PAGE */
+
+h1.centeredText {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.0rem;
+    z-index: 1;
+}
+
+
+/* SMALLER CENTERED TEXT ON MAIN PAGE ON SMARTPHONES 
+AND SMALLER DEVICES ALSO */
+
+@media (min-width: 1024px) {
+    h1.centeredText {
+        font-size: 4.0rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    h1.centeredText {
+        font-size: 3.5rem;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 639px) {
+    h1.centeredText {
+        font-size: 2.5rem;
+        word-wrap: break-word;
+    }
+}
+
+
+/* SMALLER H1 TEXT ON MAIN PAGE ON SMARTPHONES 
+AND SMALLER DEVICES ALSO */
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 639px) {
+    h1 {
+        font-size: 2.0rem;
+    }
+}
+
+
+/* HEADER IMG */
+
+.contentDiv .headerImg {
+    position: absolute;
+    left: calc(50% - 50vh);
+    opacity: 0.25;
+    bottom: 0;
+    width: 100vh;
+}
+
+@media (max-width: 1024px) {
+    .contentDiv .headerImg {
+        left: calc(50% - 30vh);
+        width: 60vh;
+    }
+}
+
+@media (max-width: 640px) {
+    .contentDiv .headerImg {
+        left: calc(50% - 20vh);
+        width: 40vh;
+    }
+}

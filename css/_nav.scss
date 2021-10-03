@@ -1,0 +1,158 @@
+.aNavList {
+    font-family: 'Arsenal', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+aside>nav>ul>li>a {
+    padding: 10px;
+    transition: .3s linear;
+}
+
+aside>nav>ul>li>a:hover {
+    border-left: 1px goldenrod solid;
+    border-right: 1px goldenrod solid;
+    color: goldenrod;
+    opacity: 0.75;
+    padding: 1px;
+}
+
+.navList {
+    padding: 0.6rem;
+    text-align: center;
+    list-style: none;
+}
+
+nav ul {
+    padding: 2rem;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+
+/* TEXT 'MENU' ON BURGER MENU ON ASIDE */
+
+.menuText {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-bottom: 1.6rem;
+    color: goldenrod;
+}
+
+
+/*///////////////BURGER MENU - START//////////////*/
+
+.burgerMenu {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    font-size: 45px;
+    line-height: 50px;
+    transition: .3s linear;
+    z-index: 4;
+}
+
+.burgerMenu .burgerColor,
+.burgerMenu .crossColor {
+    color: goldenrod;
+}
+
+.burgerMenu:hover {
+    cursor: pointer;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -400px;
+    width: 400px;
+    background: linear-gradient(45deg, rgb(35, 47, 94), rgb(11, 11, 11));
+    transition: .3s linear;
+    z-index: 3;
+}
+
+.fas {
+    display: none;
+}
+
+i.show {
+    display: block;
+}
+
+aside.show {
+    left: 0;
+}
+
+@media (min-width: 1025px) {
+    aside {
+        left: -600px;
+        width: 600px;
+    }
+    nav ul {
+        font-size: 34px;
+    }
+    ul li {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    nav ul {
+        font-size: 38px;
+    }
+    ul li {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 359px) {
+    aside {
+        left: -300px;
+        width: 300px;
+    }
+    nav ul {
+        font-size: 38px;
+    }
+    ul li {
+        font-size: 24px;
+    }
+}
+
+
+/* Burger MENU - text under hamburger 'icon' */
+
+.burgerColor:after {
+    position: relative;
+}
+
+.burgerColor:after {
+    content: "MENU";
+    position: absolute;
+    bottom: -30px;
+    right: -13px;
+    font-size: 26px;
+    font-family: 'Arsenal', sans-serif;
+}
+
+
+/* MOBILE - Burger MENU - text under hamburger 'icon' */
+
+@media (max-width:900px) {
+    .burgerColor:after {
+        bottom: -20px;
+        right: -9px;
+        font-size: 18px;
+    }
+    .burgerMenu {
+        top: 25px;
+        right: 30px;
+        font-size: 30px;
+    }
+}
+
+
+/*///////////////BURGER MENU - END//////////////*/

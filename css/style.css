@@ -1,602 +1,604 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    font-size: 16px;
-    text-align: center;
-}
-
-strong {
-    font-weight: 900;
-}
-
-p,
-ol li {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-@media (max-width: 800px) {
-    p,
-    ol li {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-a {
-    color: white;
-}
-
-.bluelink {
-    color: rgb(35, 47, 94);
-}
-
-p {
-    padding: 1rem;
-    text-align: center;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: 300;
-    font-size: 1.3rem;
-}
-
-section ul li {
-    padding: 1rem;
-    text-align: center;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: 300;
-    font-size: 1.3rem;
-    list-style: none;
-}
-
-h1 {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.4rem;
-    text-transform: uppercase;
-}
-
-h2 {
-    text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: 800;
-    font-size: 1.7rem;
-}
-
-h3 {
-    text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: 800;
-    font-size: 1.3rem;
-}
-
-.footerp {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .aNavList {
-    font-family: 'Arsenal', sans-serif;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
+  font-family: 'Arsenal', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-aside>nav>ul>li>a {
-    padding: 10px;
-    transition: .3s linear;
+aside > nav > ul > li > a {
+  padding: 10px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
-aside>nav>ul>li>a:hover {
-    border-left: 1px goldenrod solid;
-    border-right: 1px goldenrod solid;
-    color: goldenrod;
-    opacity: 0.75;
-    padding: 1px;
+aside > nav > ul > li > a:hover {
+  border-left: 1px goldenrod solid;
+  border-right: 1px goldenrod solid;
+  color: goldenrod;
+  opacity: 0.75;
+  padding: 1px;
 }
 
 .navList {
-    padding: 0.6rem;
-    text-align: center;
-    list-style: none;
+  padding: 0.6rem;
+  text-align: center;
+  list-style: none;
 }
 
 nav ul {
-    padding: 2rem;
+  padding: 2rem;
 }
 
-ul li {
-    text-align: center;
+nav ul li {
+  text-align: center;
 }
-
-.header {
-    height: 100vh;
-    background-image: url("https://raw.githubusercontent.com/goldipl/Marcin-Programuje/main/img/backimg.jpg");
-    color: white;
-}
-
-.whiteSection {
-    background-color: #fff;
-    color: black;
-}
-
-.colorSection {
-    background: linear-gradient(45deg, rgb(35, 47, 94), rgb(11, 11, 11));
-    color: white;
-}
-
-section {
-    padding: 1.5rem;
-}
-
 
 /* TEXT 'MENU' ON BURGER MENU ON ASIDE */
-
 .menuText {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    padding-bottom: 1.6rem;
-    color: goldenrod;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-bottom: 1.6rem;
+  color: goldenrod;
 }
-
-
-/* TECHNOLOGIES 'IMG TABLE' */
-
-.col {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.row {
-    flex-basis: 60%;
-}
-
-.row img {
-    padding: 20px;
-}
-
-@media (max-width: 800px) {
-    .row {
-        flex-basis: 30%;
-    }
-}
-
 
 /*///////////////BURGER MENU - START//////////////*/
-
 .burgerMenu {
-    position: fixed;
-    top: 40px;
-    right: 40px;
-    font-size: 45px;
-    line-height: 50px;
-    transition: .3s linear;
-    z-index: 4;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  font-size: 45px;
+  line-height: 50px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  z-index: 4;
 }
 
 .burgerMenu .burgerColor,
 .burgerMenu .crossColor {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 .burgerMenu:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 aside {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: -400px;
-    width: 400px;
-    background: linear-gradient(45deg, rgb(35, 47, 94), rgb(11, 11, 11));
-    transition: .3s linear;
-    z-index: 3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -400px;
+  width: 400px;
+  background: linear-gradient(45deg, #232f5e, #0b0b0b);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  z-index: 3;
 }
 
 .fas {
-    display: none;
+  display: none;
 }
 
 i.show {
-    display: block;
+  display: block;
 }
 
 aside.show {
-    left: 0;
+  left: 0;
 }
 
 @media (min-width: 1025px) {
-    aside {
-        left: -600px;
-        width: 600px;
-    }
-    nav ul {
-        font-size: 34px;
-    }
-    ul li {
-        font-size: 26px;
-    }
+  aside {
+    left: -600px;
+    width: 600px;
+  }
+  nav ul {
+    font-size: 34px;
+  }
+  ul li {
+    font-size: 26px;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 1024px) {
-    nav ul {
-        font-size: 38px;
-    }
-    ul li {
-        font-size: 24px;
-    }
+  nav ul {
+    font-size: 38px;
+  }
+  ul li {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 359px) {
-    aside {
-        left: -300px;
-        width: 300px;
-    }
-    nav ul {
-        font-size: 38px;
-    }
-    ul li {
-        font-size: 24px;
-    }
+  aside {
+    left: -300px;
+    width: 300px;
+  }
+  nav ul {
+    font-size: 38px;
+  }
+  ul li {
+    font-size: 24px;
+  }
 }
 
+/* Burger MENU - text under hamburger 'icon' */
+.burgerColor:after {
+  position: relative;
+}
+
+.burgerColor:after {
+  content: "MENU";
+  position: absolute;
+  bottom: -30px;
+  right: -13px;
+  font-size: 26px;
+  font-family: 'Arsenal', sans-serif;
+}
+
+/* MOBILE - Burger MENU - text under hamburger 'icon' */
+@media (max-width: 900px) {
+  .burgerColor:after {
+    bottom: -20px;
+    right: -9px;
+    font-size: 18px;
+  }
+  .burgerMenu {
+    top: 25px;
+    right: 30px;
+    font-size: 30px;
+  }
+}
 
 /*///////////////BURGER MENU - END//////////////*/
-
-
 /* BOUNCING ARROW */
-
 .contentDiv {
-    background-color: transparent;
-    height: 200px;
-    width: 200px;
+  background-color: transparent;
+  height: 200px;
+  width: 200px;
+}
+
+@-webkit-keyframes bouncing {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 
 @keyframes bouncing {
-    0% {
-        bottom: 0;
-    }
-    50% {
-        bottom: 20px;
-    }
-    100% {
-        bottom: 0;
-    }
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 
 .arrow {
-    position: absolute;
-    animation: bouncing 1s infinite ease-in-out;
-    bottom: 0;
-    display: block;
-    height: 70px;
-    left: calc(50% - 35px);
-    width: 70px;
-    z-index: 2;
+  position: absolute;
+  -webkit-animation: bouncing 1s infinite ease-in-out;
+          animation: bouncing 1s infinite ease-in-out;
+  bottom: 0;
+  display: block;
+  height: 70px;
+  left: calc(50% - 35px);
+  width: 70px;
+  z-index: 2;
 }
-
 
 /* CENTERED TEXT ON MAIN PAGE */
-
 h1.centeredText {
-    position: absolute;
-    top: 40%;
-    left: 0;
-    right: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4.0rem;
-    z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.0rem;
+  z-index: 1;
 }
-
 
 /* SMALLER CENTERED TEXT ON MAIN PAGE ON SMARTPHONES 
 AND SMALLER DEVICES ALSO */
-
 @media (min-width: 1024px) {
-    h1.centeredText {
-        font-size: 4.0rem;
-    }
+  h1.centeredText {
+    font-size: 4.0rem;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
-    h1.centeredText {
-        font-size: 3.5rem;
-        word-wrap: break-word;
-    }
+  h1.centeredText {
+    font-size: 3.5rem;
+    word-wrap: break-word;
+  }
 }
 
 @media (max-width: 639px) {
-    h1.centeredText {
-        font-size: 2.5rem;
-        word-wrap: break-word;
-    }
+  h1.centeredText {
+    font-size: 2.5rem;
+    word-wrap: break-word;
+  }
 }
-
 
 /* SMALLER H1 TEXT ON MAIN PAGE ON SMARTPHONES 
 AND SMALLER DEVICES ALSO */
-
 @media (min-width: 640px) and (max-width: 1023px) {
-    h1 {
-        font-size: 2.3rem;
-    }
+  h1 {
+    font-size: 2.3rem;
+  }
 }
 
 @media (max-width: 639px) {
-    h1 {
-        font-size: 2.0rem;
-    }
+  h1 {
+    font-size: 2.0rem;
+  }
 }
 
-
 /* HEADER IMG */
-
 .contentDiv .headerImg {
-    position: absolute;
-    left: calc(50% - 50vh);
-    opacity: 0.25;
-    bottom: 0;
-    width: 100vh;
+  position: absolute;
+  left: calc(50% - 50vh);
+  opacity: 0.25;
+  bottom: 0;
+  width: 100vh;
 }
 
 @media (max-width: 1024px) {
-    .contentDiv .headerImg {
-        left: calc(50% - 30vh);
-        width: 60vh;
-    }
+  .contentDiv .headerImg {
+    left: calc(50% - 30vh);
+    width: 60vh;
+  }
 }
 
 @media (max-width: 640px) {
-    .contentDiv .headerImg {
-        left: calc(50% - 20vh);
-        width: 40vh;
-    }
+  .contentDiv .headerImg {
+    left: calc(50% - 20vh);
+    width: 40vh;
+  }
 }
 
-
 /* BUTTON BLACK */
-
 .buttonBlack {
-    position: relative;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    padding: 10px;
-    margin: 10px;
-    border-style: none;
-    overflow: hidden;
-    background-color: transparent;
-    border: 1px solid black;
-    cursor: pointer;
+  position: relative;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px;
+  border-style: none;
+  overflow: hidden;
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .buttonBlack::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: -150%;
-    width: 100%;
-    height: 4px;
-    background-color: #232f5e;
-    transition: .7s cubic-bezier(0, 1.8, 1, 1);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -150%;
+  width: 100%;
+  height: 4px;
+  background-color: #232f5e;
+  -webkit-transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
+  transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
 }
 
 .buttonBlack:hover::before {
-    right: 0;
+  right: 0;
 }
 
 .buttonBlackLink {
-    color: black;
-    text-decoration: none;
-    padding: 10px 25px;
+  color: black;
+  text-decoration: none;
+  padding: 10px 25px;
 }
 
-
 /* BUTTON WHITE*/
-
 .buttonWhite {
-    position: relative;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    padding: 10px;
-    margin: 10px;
-    border-style: none;
-    overflow: hidden;
-    background-color: transparent;
-    border: 1px solid white;
-    cursor: pointer;
+  position: relative;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px;
+  border-style: none;
+  overflow: hidden;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .buttonWhite::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: -150%;
-    width: 100%;
-    height: 4px;
-    background-color: white;
-    transition: .7s cubic-bezier(0, 1.8, 1, 1);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -150%;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  -webkit-transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
+  transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
 }
 
 .buttonWhite:hover::before {
-    right: 0;
+  right: 0;
 }
 
 .buttonWhiteLink {
-    color: white;
-    text-decoration: none;
-    padding: 10px 25px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
 }
 
+.footerp {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  text-align: center;
+}
+
+strong {
+  font-weight: 900;
+}
+
+p,
+ol li {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media (max-width: 800px) {
+  p,
+  ol li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+a {
+  color: white;
+}
+
+.bluelink {
+  color: #232f5e;
+}
+
+p {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+section ul li {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 800;
+  font-size: 1.7rem;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("https://raw.githubusercontent.com/goldipl/Marcin-Programuje/main/img/backimg.jpg");
+  color: white;
+}
+
+.whiteSection {
+  background-color: #fff;
+  color: black;
+}
+
+.colorSection {
+  background: linear-gradient(45deg, #232f5e, #0b0b0b);
+  color: white;
+}
+
+section {
+  padding: 1.5rem;
+}
+
+/* TECHNOLOGIES 'IMG TABLE' */
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.row img {
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .row {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
 
 /* TECHNOLOGIES LOGOS */
-
 .techLogoImg {
-    width: 120px;
-    height: auto;
+  width: 120px;
+  height: auto;
 }
 
-
 /* SOCIAL MEDIA ICONS - FOOTER */
-
 .colorSection .fab {
-    font-size: 35px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .colorSection .far {
-    font-size: 35px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .fab:hover,
 .far:hover,
 .bluelink:hover {
-    color: goldenrod;
+  color: goldenrod;
 }
 
-
 /* PROJECTS FLEXBOX */
-
 .colP {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .rowP {
-    flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 
 .contP {
-    display: block;
-    width: 50vh;
-    height: 24vh;
-    margin: 20px;
-    border: 1px solid black;
-    overflow: hidden;
-    text-align: center;
-    color: white;
+  display: block;
+  width: 50vh;
+  height: 24vh;
+  margin: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+  text-align: center;
+  color: white;
 }
 
 .contCert {
-    display: block;
-    width: 50vh;
-    height: 38vh;
-    margin: 20px;
-    border: 1px solid black;
-    overflow: hidden;
-    text-align: center;
-    color: white;
+  display: block;
+  width: 50vh;
+  height: 38vh;
+  margin: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+  text-align: center;
+  color: white;
 }
 
 .contImg {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .contP:hover,
 .contCert img:hover {
-    box-shadow: 0 0 15px rgb(78, 27, 114);
-    -moz-box-shadow: 0 0 15px rgb(78, 27, 114);
-    -webkit-box-shadow: 0 0 15px rgb(78, 27, 114);
-    cursor: pointer;
+  box-shadow: 0 0 15px #4e1b72;
+  -moz-box-shadow: 0 0 15px #4e1b72;
+  -webkit-box-shadow: 0 0 15px #4e1b72;
+  cursor: pointer;
 }
 
 img {
-    transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .contCert img:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
 }
 
 .contP img:hover,
 .contCert img:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    cursor: pointer;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  cursor: pointer;
 }
 
-@media (max-width:500px) {
-    .contP {
-        width: 45vh;
-        height: 21vh;
-    }
+@media (max-width: 500px) {
+  .contP {
+    width: 45vh;
+    height: 21vh;
+  }
 }
 
-@media (max-width:500px) {
-    .contCert {
-        width: 45vh;
-        height: 35vh;
-    }
+@media (max-width: 500px) {
+  .contCert {
+    width: 45vh;
+    height: 35vh;
+  }
 }
 
 .smicons {
-    color: #232f5e;
-    font-size: 46px;
-}
-
-
-/* Burger MENU - text under hamburger 'icon' */
-
-.burgerColor:after {
-    position: relative;
-}
-
-.burgerColor:after {
-    content: "MENU";
-    position: absolute;
-    bottom: -30px;
-    right: -13px;
-    font-size: 26px;
-    font-family: 'Arsenal', sans-serif;
-}
-
-
-/* MOBILE - Burger MENU - text under hamburger 'icon' */
-
-@media (max-width:900px) {
-    .burgerColor:after {
-        bottom: -20px;
-        right: -9px;
-        font-size: 18px;
-    }
-    .burgerMenu {
-        top: 25px;
-        right: 30px;
-        font-size: 30px;
-    }
+  color: #232f5e;
+  font-size: 46px;
 }
 
 .blockedBody {
-    height: 100%;
-    overflow: none;
-    -webkit-overflow-scrolling: none;
-    -ms-overflow-style: none;
-    position: fixed;
-    left: 0;
-    right: 0;
+  height: 100%;
+  overflow: none;
+  -webkit-overflow-scrolling: none;
+  -ms-overflow-style: none;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .headerOpacity {
-    opacity: 0.4;
+  opacity: 0.4;
 }
+/*# sourceMappingURL=style.css.map */

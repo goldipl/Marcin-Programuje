@@ -1,0 +1,252 @@
+@import 'reset';
+@import 'nav';
+@import 'animations';
+@import 'header';
+@import 'buttons';
+@import 'footer';
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    text-align: center;
+}
+
+strong {
+    font-weight: 900;
+}
+
+p,
+ol li {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media (max-width: 800px) {
+    p,
+    ol li {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+a {
+    color: white;
+}
+
+.bluelink {
+    color: rgb(35, 47, 94);
+}
+
+p {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+section ul li {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.header {
+    height: 100vh;
+    background-image: url("https://raw.githubusercontent.com/goldipl/Marcin-Programuje/main/img/backimg.jpg");
+    color: white;
+}
+
+.whiteSection {
+    background-color: #fff;
+    color: black;
+}
+
+.colorSection {
+    background: linear-gradient(45deg, rgb(35, 47, 94), rgb(11, 11, 11));
+    color: white;
+}
+
+section {
+    padding: 1.5rem;
+}
+
+
+/* TECHNOLOGIES 'IMG TABLE' */
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    flex-basis: 60%;
+}
+
+.row img {
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .row {
+        flex-basis: 30%;
+    }
+}
+
+
+/* TECHNOLOGIES LOGOS */
+
+.techLogoImg {
+    width: 120px;
+    height: auto;
+}
+
+
+/* SOCIAL MEDIA ICONS - FOOTER */
+
+.colorSection .fab {
+    font-size: 35px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.colorSection .far {
+    font-size: 35px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fab:hover,
+.far:hover,
+.bluelink:hover {
+    color: goldenrod;
+}
+
+
+/* PROJECTS FLEXBOX */
+
+.colP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rowP {
+    flex-basis: 20%;
+}
+
+.contP {
+    display: block;
+    width: 50vh;
+    height: 24vh;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.contCert {
+    display: block;
+    width: 50vh;
+    height: 38vh;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.contImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.contP:hover,
+.contCert img:hover {
+    box-shadow: 0 0 15px rgb(78, 27, 114);
+    -moz-box-shadow: 0 0 15px rgb(78, 27, 114);
+    -webkit-box-shadow: 0 0 15px rgb(78, 27, 114);
+    cursor: pointer;
+}
+
+img {
+    transition: all .2s linear;
+}
+
+.contCert img:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+.contP img:hover,
+.contCert img:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    .contP {
+        width: 45vh;
+        height: 21vh;
+    }
+}
+
+@media (max-width:500px) {
+    .contCert {
+        width: 45vh;
+        height: 35vh;
+    }
+}
+
+.smicons {
+    color: #232f5e;
+    font-size: 46px;
+}
+
+.blockedBody {
+    height: 100%;
+    overflow: none;
+    -webkit-overflow-scrolling: none;
+    -ms-overflow-style: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.headerOpacity {
+    opacity: 0.4;
+}
