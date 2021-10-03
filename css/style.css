@@ -507,26 +507,6 @@ AND SMALLER DEVICES ALSO */
     color: white;
 }
 
-
-/* Centered text over an Image from Portfolio */
-
-
-/* .centeredTextPI {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 4% 35%;
-}
-
-@media (max-width:1024px) {
-    .centeredTextPI {
-        font-size: 18px;
-    }
-} */
-
 .contImg {
     max-width: 100%;
     height: auto;
