@@ -606,3 +606,15 @@ img {
         font-size: 30px;
     }
 }
+
+.blockedBody {
+    height: 100%;
+    overflow-scrolling: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.headerOpacity {
+    opacity: 0.4;
+}
