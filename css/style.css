@@ -200,6 +200,12 @@ aside.show {
   z-index: 2;
 }
 
+.header {
+  height: 100vh;
+  background-image: url("../img/backimg.jpg");
+  color: white;
+}
+
 /* CENTERED TEXT ON MAIN PAGE */
 h1.centeredText {
   position: absolute;
@@ -423,12 +429,6 @@ h3 {
   font-family: 'Arsenal', sans-serif;
   font-weight: 800;
   font-size: 1.3rem;
-}
-
-.header {
-  height: 100vh;
-  background-image: url("https://raw.githubusercontent.com/goldipl/Marcin-Programuje/main/img/backimg.jpg");
-  color: white;
 }
 
 .whiteSection {
