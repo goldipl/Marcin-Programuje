@@ -13,3 +13,7 @@ burgerMenu.addEventListener("click", function() {
     body.classList.toggle("blockedBody");
     header.classList.toggle("headerOpacity");
 });
+
+/* footer year */
+document.querySelector("span.footerYear").innerHTML = new Date().getFullYear();
+/* /footer year */
