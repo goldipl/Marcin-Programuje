@@ -15,6 +15,9 @@ h1.centeredText {
     font-family: 'Montserrat', sans-serif;
     font-size: 4.0rem;
     z-index: 1;
+    background: linear-gradient(to right, #ffd702 30%, #d18c0e 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
