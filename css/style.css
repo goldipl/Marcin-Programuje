@@ -206,6 +206,19 @@ aside.show {
   color: white;
 }
 
+.header.small {
+  height: 30vh;
+}
+
+.header.small h1 {
+  font-size: 3.0rem;
+  line-height: 30vh;
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #ffd702), color-stop(60%, #d18c0e));
+  background: linear-gradient(to right, #ffd702 30%, #d18c0e 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* CENTERED TEXT ON MAIN PAGE */
 h1.centeredText {
   position: absolute;
