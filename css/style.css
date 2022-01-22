@@ -307,10 +307,6 @@ nav li {
   -webkit-text-fill-color: transparent;
 }
 
-.typing {
-  display: inline-block;
-}
-
 /* CENTERED TEXT ON MAIN PAGE */
 h1.centeredText {
   position: absolute;
