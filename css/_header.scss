@@ -16,6 +16,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.typing {
+    display: inline-block;
+}
+
 
 /* CENTERED TEXT ON MAIN PAGE */
 
@@ -24,12 +28,17 @@ h1.centeredText {
     top: 40%;
     left: 0;
     right: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4.0rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 6.0rem;
     z-index: 1;
     background: linear-gradient(to right, #ffd702 30%, #d18c0e 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.smallCenteredText {
+    font-size: 2.0rem;
+    font-weight: 400;
 }
 
 
@@ -38,7 +47,7 @@ AND SMALLER DEVICES ALSO */
 
 @media (min-width: 1024px) {
     h1.centeredText {
-        font-size: 4.0rem;
+        font-size: 6.0rem;
     }
 }
 
@@ -47,12 +56,18 @@ AND SMALLER DEVICES ALSO */
         font-size: 3.5rem;
         word-wrap: break-word;
     }
+    .smallCenteredText {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 639px) {
     h1.centeredText {
         font-size: 2.5rem;
         word-wrap: break-word;
+    }
+    .smallCenteredText {
+        font-size: 1.5rem;
     }
 }
 
