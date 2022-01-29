@@ -392,6 +392,31 @@ AND SMALLER DEVICES ALSO */
   }
 }
 
+/* CENTERED TEXT ANIMATION */
+h1.centeredText {
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+  -webkit-animation: 1.2s slideIn ease-in-out forwards 0.3s;
+          animation: 1.2s slideIn ease-in-out forwards 0.3s;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideIn {
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 /* BUTTON BLACK */
 .buttonBlack {
   position: relative;
