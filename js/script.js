@@ -16,3 +16,20 @@ mobileMenuLi.addEventListener("click", () => {
 /* footer year */
 document.querySelector("span.footerYear").innerHTML = new Date().getFullYear();
 /* /footer year */
+
+fadeAnimation = () => {
+    const checkItem = document.querySelectorAll(".check-slide-item");
+
+    for (let i = 0; i < checkItem.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = checkItem[i].getBoundingClientRect().top;
+
+        if (elementTop < windowHeight) {
+            checkItem[i].classList.add("active");
+        } else {
+            checkItem[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", fadeAnimation);
