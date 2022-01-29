@@ -12,10 +12,7 @@ mobileMenuLi.addEventListener("click", () => {
     mobileMenu.classList.remove("active");
 });
 
-
-/* footer year */
 document.querySelector("span.footerYear").innerHTML = new Date().getFullYear();
-/* /footer year */
 
 fadeAnimation = () => {
     const checkItem = document.querySelectorAll(".check-slide-item");
