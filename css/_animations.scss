@@ -29,6 +29,14 @@
     z-index: 2;
 }
 
+@media (max-width: 800px) {
+    .arrow {
+        height: 50px;
+        left: calc(50% - 25px);
+        width: 50px;
+    }
+}
+
 
 /* CENTERED TEXT ANIMATION */
 
