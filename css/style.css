@@ -398,6 +398,10 @@ section.whiteSection.magicSquare canvas {
   width: 100vw;
 }
 
+.header.small.moreLines h1 {
+  line-height: 4.0rem;
+}
+
 .header {
   height: 100vh;
   background-image: url("../img/backimg.jpg");
