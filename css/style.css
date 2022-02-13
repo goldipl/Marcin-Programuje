@@ -398,8 +398,10 @@ section.whiteSection.magicSquare canvas {
   width: 100vw;
 }
 
-.header.small.moreLines h1 {
-  line-height: 4.0rem;
+@media (max-width: 820px) {
+  .header.small.moreLines h1 {
+    line-height: 4.0rem;
+  }
 }
 
 .header {
