@@ -6,7 +6,10 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.querySelector('section.magicSquare').appendChild(renderer.domElement);
 
 const geometry = new THREE.BoxGeometry(1.5, 1.5, 1.5);
-const material = new THREE.MeshBasicMaterial({ color: 0xF6C604 });
+let material = new THREE.MeshBasicMaterial({
+    color: 0xF6C604,
+});
+
 const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
@@ -22,3 +25,18 @@ animate = () => {
 };
 
 animate();
+
+let onKeyDown = function(event) {
+    // when 1 is pressed change color to red
+    if (event.keyCode === 49) {
+        material.color.setHex(0xff0000);
+        // when 2 is pressed change color to defualt goldenrod color
+    } else if (event.keyCode === 50) {
+        material.color.setHex(0xF6C604);
+        // when 3 is pressed change color to green color
+    } else if (event.keyCode === 51) {
+        material.color.setHex(0x00FF00);
+    }
+};
+
+document.addEventListener('keydown', onKeyDown, false);
