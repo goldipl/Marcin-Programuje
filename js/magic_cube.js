@@ -30,7 +30,7 @@ let onKeyDown = (e) => {
     // when 1 is pressed change color to red
     if (e.keyCode === 49) {
         material.color.setHex(0xff0000);
-        // when 2 is pressed change color to defualt goldenrod color
+        // when 2 is pressed change color to default goldenrod color
     } else if (e.keyCode === 50) {
         material.color.setHex(0xF6C604);
         // when 3 is pressed change color to green color
