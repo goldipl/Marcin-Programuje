@@ -576,6 +576,60 @@ AND SMALLER DEVICES ALSO */
   padding: 10px 25px;
 }
 
+.magicButton {
+  font-family: 'Arsenal', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 24px;
+  margin: auto;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.magicButton.red {
+  border: 1px solid red;
+  color: red;
+}
+
+.magicButton.goldenrod {
+  border: 1px solid gold;
+  color: gold;
+}
+
+.magicButton.green {
+  border: 1px solid green;
+  color: green;
+}
+
+.magicButton.red:hover {
+  background-color: red;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.magicButton.goldenrod:hover {
+  background-color: gold;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.magicButton.green:hover {
+  background-color: green;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
 .footerp {
   padding-top: 20px;
   padding-bottom: 20px;
