@@ -388,6 +388,16 @@ body #section01 {
   }
 }
 
+section.whiteSection.magicSquare {
+  margin: 0;
+  padding: 0;
+}
+
+section.whiteSection.magicSquare canvas {
+  height: auto;
+  width: 100vw;
+}
+
 .header {
   height: 100vh;
   background-image: url("../img/backimg.jpg");
