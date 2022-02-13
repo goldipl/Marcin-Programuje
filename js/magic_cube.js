@@ -26,6 +26,22 @@ animate = () => {
 
 animate();
 
+const redMagicButton = document.querySelector("a.magicButton.red");
+const goldenrodMagicButton = document.querySelector("a.magicButton.goldenrod");
+const greenMagicButton = document.querySelector("a.magicButton.green");
+
+redMagicButton.addEventListener('click', () => {
+    material.color.setHex(0xff0000);
+});
+
+goldenrodMagicButton.addEventListener('click', () => {
+    material.color.setHex(0xF6C604);
+});
+
+greenMagicButton.addEventListener('click', () => {
+    material.color.setHex(0x00FF00);
+});
+
 let onKeyDown = (e) => {
     // when 1 is pressed change color to red
     if (e.keyCode === 49) {
