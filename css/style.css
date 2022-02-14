@@ -405,7 +405,7 @@ section.whiteSection.magicSquare canvas {
 }
 
 .header {
-  height: 100vh;
+  height: calc(100vh - 60px);
   background-image: url("../img/backimg.jpg");
   color: white;
 }
