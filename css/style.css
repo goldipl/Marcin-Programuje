@@ -398,12 +398,6 @@ section.whiteSection.magicSquare canvas {
   width: 100vw !important;
 }
 
-@media (max-width: 820px) {
-  .header.small.moreLines h1 {
-    line-height: 4.0rem;
-  }
-}
-
 .header {
   height: calc(100vh - 60px);
   background-image: url("../img/backimg.jpg");
@@ -674,14 +668,6 @@ ol li {
   margin-right: 10%;
 }
 
-@media (max-width: 800px) {
-  p,
-  ol li {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 a {
   color: white;
 }
@@ -767,13 +753,6 @@ section {
 
 .row img {
   padding: 20px;
-}
-
-@media (max-width: 800px) {
-  .row {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-  }
 }
 
 /* TECHNOLOGIES LOGOS */
@@ -876,20 +855,6 @@ img {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
-  .contP {
-    width: 45vh;
-    height: 21vh;
-  }
-}
-
-@media (max-width: 500px) {
-  .contCert {
-    width: 45vh;
-    height: 35vh;
-  }
-}
-
 .smicons {
   color: #232f5e;
   font-size: 46px;
@@ -907,5 +872,43 @@ img {
 
 .headerOpacity {
   opacity: 0.4;
+}
+
+@media (max-width: 800px) {
+  p,
+  ol li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .header.small.moreLines h1 {
+    line-height: 4.0rem;
+  }
+  .header.small {
+    height: auto;
+    padding: 24px;
+  }
+  .header.small.moreLines h1,
+  .header.small h1 {
+    line-height: 2.2rem;
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .row {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contP {
+    width: 45vh;
+    height: 21vh;
+  }
+  .contCert {
+    width: 45vh;
+    height: 35vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
