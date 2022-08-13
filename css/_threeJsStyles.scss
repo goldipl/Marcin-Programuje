@@ -4,8 +4,8 @@ section.whiteSection.magicSquare {
 }
 
 section.whiteSection.magicSquare canvas {
-    height: auto;
-    width: 100vw;
+    height: auto !important;
+    width: 100vw !important;
 }
 
 @media (max-width: 820px) {
