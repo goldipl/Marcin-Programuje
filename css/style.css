@@ -808,7 +808,8 @@ section {
   width: 50vh;
   height: 24vh;
   margin: 20px;
-  border: 1px solid black;
+  -webkit-box-shadow: 0px 0px 24px -9px #42445a;
+          box-shadow: 0px 0px 24px -9px #42445a;
   overflow: hidden;
   text-align: center;
   color: white;
