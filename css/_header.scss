@@ -2,6 +2,7 @@
     height: calc(100vh - 160px);
     background-image: url("../img/backimg.jpg");
     color: white;
+    margin-top: 60px;
 }
 
 .header.small {
@@ -49,6 +50,12 @@ h1.centeredText {
     transform: rotate(180deg);
     fill: #FFFFFF;
     overflow-x: hidden;
+}
+
+@media (max-width: 800px) {
+    .header .bottom-shape {
+        height: 100px;
+    }
 }
 
 /* SMALLER CENTERED TEXT ON MAIN PAGE ON SMARTPHONES 

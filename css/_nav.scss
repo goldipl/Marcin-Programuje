@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 nav {
-    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-image: url("../img/backimg.jpg");
+    height: 60px;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0px 24px -2px goldenrod;
 }
 
 nav a.logo {
