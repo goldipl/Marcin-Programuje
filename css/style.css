@@ -390,10 +390,13 @@ h1.centeredText {
 .header .bottom-shape {
   position: absolute;
   bottom: 100px;
-  left: 0;
+  right: 0;
+  height: 160px;
+  width: 200vw;
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   fill: #FFFFFF;
+  overflow-x: hidden;
 }
 
 /* SMALLER CENTERED TEXT ON MAIN PAGE ON SMARTPHONES 
