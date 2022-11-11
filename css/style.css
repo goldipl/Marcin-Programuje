@@ -363,6 +363,7 @@ section.whiteSection.magicSquare canvas {
 }
 
 .header {
+  position: relative;
   height: calc(100vh - 160px);
   background-image: url("../img/background_image.jpeg");
   color: white;
@@ -408,7 +409,7 @@ h1.centeredText {
 /* BOTTOM SHAPE */
 .header .bottom-shape {
   position: absolute;
-  bottom: 100px;
+  bottom: 0;
   right: 0;
   height: 160px;
   width: 200vw;
@@ -421,7 +422,6 @@ h1.centeredText {
 @media (max-width: 800px) {
   .header .bottom-shape {
     height: 100px;
-    bottom: 40px;
   }
 }
 
