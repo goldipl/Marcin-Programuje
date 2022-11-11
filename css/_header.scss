@@ -1,8 +1,11 @@
 .header {
     height: calc(100vh - 160px);
-    background-image: url("../img/backimg.jpg");
+    background-image: url("../img/background_image.jpeg");
     color: white;
     margin-top: 60px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 600vh;
 }
 
 .header.small {

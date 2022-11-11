@@ -20,7 +20,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../img/backimg.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-125%, #00fff7), color-stop(95%, #000000));
+  background: linear-gradient(to top, #00fff7 -125%, #000000 95%);
   height: 60px;
   width: 100%;
   z-index: 100;
@@ -363,9 +364,12 @@ section.whiteSection.magicSquare canvas {
 
 .header {
   height: calc(100vh - 160px);
-  background-image: url("../img/backimg.jpg");
+  background-image: url("../img/background_image.jpeg");
   color: white;
   margin-top: 60px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 600vh;
 }
 
 .header.small {
@@ -636,8 +640,8 @@ html {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#232f5e), color-stop(99%, #d0368a));
-  background-image: linear-gradient(180deg, #232f5e 0%, #d0368a 99%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-125%, #00fff7), color-stop(95%, #000000));
+  background-image: linear-gradient(to top, #00fff7 -125%, #000000 95%);
   -webkit-box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
           box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
 }
@@ -712,7 +716,8 @@ h3 {
 }
 
 .colorSection {
-  background: linear-gradient(45deg, #232f5e, #0b0b0b);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-125%, #00fff7), color-stop(95%, #000000));
+  background: linear-gradient(to top, #00fff7 -125%, #000000 95%);
   color: white;
 }
 
