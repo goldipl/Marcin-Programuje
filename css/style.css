@@ -814,13 +814,13 @@ section {
 
 .contCert {
   display: block;
-  width: 50vh;
-  height: 38vh;
-  margin: 20px;
+  width: 30vw;
+  height: auto;
   border: 1px solid black;
   overflow: hidden;
   text-align: center;
   color: white;
+  margin: 16px auto;
 }
 
 .contImg {
