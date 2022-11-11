@@ -910,6 +910,7 @@ img {
   color: gold;
 }
 
+/* Icons section */
 .icons-section {
   width: 1000px;
   margin: 0 auto;
@@ -919,6 +920,13 @@ img {
   width: 100px;
   height: auto;
   margin: 16px;
+}
+
+/* Google Map */
+iframe.google-map {
+  width: 100vw;
+  height: 400px;
+  margin-bottom: -4px;
 }
 
 @media (max-width: 1000px) {
