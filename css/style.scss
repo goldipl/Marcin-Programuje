@@ -6,6 +6,7 @@
 @import 'threeJsStyles';
 @import 'header';
 @import 'buttons';
+@import 'services';
 @import 'footer';
 html {
     scroll-behavior: smooth;
@@ -106,6 +107,7 @@ h3 {
 section {
     padding: 1.5rem;
     overflow-x: hidden;
+    padding: 80px 0;
 }
 
 
