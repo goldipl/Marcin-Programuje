@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -29,12 +29,19 @@ nav {
 }
 
 nav a.logo {
-  font-family: 'Zen Tokyo Zoo', cursive;
-  font-size: 48px;
+  position: relative;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 28px;
   font-weight: 400;
-  margin: 8px 0 0 16px;
+  margin: -24px 0 0 16px;
   text-decoration: none;
   color: goldenrod;
+}
+
+nav a.logo span {
+  position: absolute;
+  top: 24px;
+  left: 40px;
 }
 
 nav .desktopMenu {
@@ -380,7 +387,7 @@ h1.centeredText {
   top: 40%;
   left: 0;
   right: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 6.0rem;
   z-index: 1;
   background: -webkit-gradient(linear, left top, right top, color-stop(30%, #ffd702), color-stop(60%, #d18c0e));
