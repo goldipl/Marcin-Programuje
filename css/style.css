@@ -78,6 +78,7 @@ nav .desktopMenu li:first-of-type::after {
 }
 
 nav .desktopMenu li a {
+  font-family: 'Julius Sans One', sans-serif;
   position: relative;
   cursor: pointer;
   line-height: 60px;
@@ -247,6 +248,7 @@ nav li {
 }
 
 .mobileMenu .mobileMenu_li li a {
+  font-family: 'Julius Sans One', sans-serif;
   color: #FFFFFF;
   text-decoration: none;
 }
