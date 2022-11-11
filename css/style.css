@@ -217,6 +217,7 @@ nav li {
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: url("../img/background_image.jpeg");
+  background-position: top;
 }
 
 .mobileMenu .mobileMenu_li li {
