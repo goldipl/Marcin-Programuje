@@ -639,6 +639,7 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   text-align: center;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -682,6 +683,8 @@ p {
   font-family: 'Arsenal', sans-serif;
   font-weight: 300;
   font-size: 1.3rem;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 section ul li {
@@ -732,6 +735,7 @@ h3 {
 
 section {
   padding: 1.5rem;
+  overflow-x: hidden;
 }
 
 /* TECHNOLOGIES 'IMG TABLE' */
@@ -906,12 +910,33 @@ img {
   color: gold;
 }
 
-@media (max-width: 800px) {
+.icons-section {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.icons-section img {
+  width: 100px;
+  height: auto;
+  margin: 16px;
+}
+
+@media (max-width: 1000px) {
   p,
   ol li {
     margin-left: 0;
     margin-right: 0;
+    width: 90vw;
   }
+  .icons-section {
+    width: 90vw;
+  }
+  .icons-section img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 800px) {
   .header.small.moreLines h1 {
     line-height: 4.0rem;
   }
