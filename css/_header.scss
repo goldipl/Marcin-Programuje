@@ -1,5 +1,5 @@
 .header {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 160px);
     background-image: url("../img/backimg.jpg");
     color: white;
 }
@@ -37,6 +37,15 @@ h1.centeredText {
     font-weight: 400;
 }
 
+/* BOTTOM SHAPE */
+
+.header .bottom-shape {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    transform: rotate(180deg);
+    fill: #FFFFFF;
+}
 
 /* SMALLER CENTERED TEXT ON MAIN PAGE ON SMARTPHONES 
 AND SMALLER DEVICES ALSO */
