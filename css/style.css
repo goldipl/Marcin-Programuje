@@ -690,7 +690,7 @@ AND SMALLER DEVICES ALSO */
     width: 100%;
   }
   .about_me_container .about_me_container-right {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
   }
@@ -1069,7 +1069,7 @@ iframe.google-map {
   ol li {
     margin-left: 0;
     margin-right: 0;
-    width: 90vw;
+    width: 100%;
   }
   .icons-section {
     width: 90vw;
