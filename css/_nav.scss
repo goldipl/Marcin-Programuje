@@ -48,7 +48,6 @@ nav .desktopMenu li {
     position: relative;
     padding: 0px 24px;
     cursor: pointer;
-    line-height: 60px;
     list-style: none;
     height: 60px;
 }
@@ -73,28 +72,30 @@ nav .desktopMenu li:first-of-type::after {
 }
 
 nav .desktopMenu li a {
+    display: block;
     font-family: 'Julius Sans One', sans-serif;
     position: relative;
     cursor: pointer;
     line-height: 60px;
+    -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
     list-style: none;
     color: #FFFFFF;
     text-decoration: none;
     font-size: 24px;
     font-weight: 700;
-    padding: 8px;
+    padding: 0 8px;
 }
 
 nav .desktopMenu li a::after {
     position: absolute;
-    bottom: 0;
+    bottom: 8px;
     left: 0;
     right: 0;
     margin: auto;
     width: 0%;
     content: '';
-    color: transparent;
+    color: rgba(255,255,255,0);
     background: goldenrod;
     height: 1px;
     transition: all 0.5s;
