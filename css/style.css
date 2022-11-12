@@ -659,6 +659,8 @@ AND SMALLER DEVICES ALSO */
   content: '';
   background-image: url("../img/wave_shape.svg");
   background-size: 100vw 80px;
+  width: 100vw;
+  height: 80px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   z-index: 11;
@@ -672,6 +674,7 @@ AND SMALLER DEVICES ALSO */
 @media (max-width: 800px) {
   .colorSection::before {
     background-size: 100vw 40px;
+    height: 40px;
   }
 }
 
