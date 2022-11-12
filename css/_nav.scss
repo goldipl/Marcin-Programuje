@@ -50,7 +50,12 @@ nav .desktopMenu li {
     cursor: pointer;
     line-height: 60px;
     list-style: none;
+    height: 60px;
 }
+
+nav .desktopMenu li:nth-child(2) {
+    width: 180px;
+  }
 
 nav .desktopMenu li::after {
     display: block;

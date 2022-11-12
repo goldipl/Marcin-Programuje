@@ -77,6 +77,11 @@ nav .desktopMenu li {
   cursor: pointer;
   line-height: 60px;
   list-style: none;
+  height: 60px;
+}
+
+nav .desktopMenu li:nth-child(2) {
+  width: 180px;
 }
 
 nav .desktopMenu li::after {
@@ -653,8 +658,7 @@ AND SMALLER DEVICES ALSO */
   left: 0;
   content: '';
   background-image: url("../img/wave_shape.svg");
-  width: 100vw;
-  height: 80px;
+  background-size: 100vw 80px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   z-index: 11;
@@ -667,7 +671,7 @@ AND SMALLER DEVICES ALSO */
 
 @media (max-width: 800px) {
   .colorSection::before {
-    height: 40px;
+    background-size: 100vw 40px;
   }
 }
 

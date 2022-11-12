@@ -8,8 +8,7 @@
     left: 0;
     content: '';
     background-image: url("../img/wave_shape.svg");
-    width: 100vw;
-    height: 80px;
+    background-size: 100vw 80px;
     transform: rotate(180deg);
     z-index: 11;
     display: block;
@@ -21,6 +20,6 @@
 
 @media (max-width: 800px) {
     .colorSection::before {
-        height: 40px;
+        background-size: 100vw 40px;
     } 
 }
