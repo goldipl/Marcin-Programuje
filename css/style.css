@@ -29,6 +29,22 @@ nav {
           box-shadow: 0 0px 24px -2px goldenrod;
 }
 
+nav .menu_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 nav a.logo {
   position: relative;
   font-family: 'Major Mono Display', monospace;
@@ -37,6 +53,7 @@ nav a.logo {
   margin: -24px 0 0 16px;
   text-decoration: none;
   color: goldenrod;
+  margin-right: 200px;
 }
 
 nav a.logo span {
@@ -118,6 +135,10 @@ nav li {
 @media (max-width: 1201px) {
   nav .desktopMenu {
     display: none;
+  }
+  nav .menu_container {
+    width: auto;
+    margin: unset;
   }
 }
 

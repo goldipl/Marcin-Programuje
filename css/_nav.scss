@@ -1,3 +1,4 @@
+
 nav {
     position: fixed;
     top: 0;
@@ -10,6 +11,14 @@ nav {
     width: 100%;
     z-index: 100;
     box-shadow: 0 0px 24px -2px goldenrod;
+    .menu_container {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 nav a.logo {
@@ -20,6 +29,7 @@ nav a.logo {
     margin: -24px 0 0 16px;
     text-decoration: none;
     color: goldenrod;
+    margin-right: 200px;
     span {
         position: absolute;
         top: 24px;
@@ -96,6 +106,10 @@ nav li {
 @media (max-width: 1201px) {
     nav .desktopMenu {
         display: none;
+    }
+    nav .menu_container {
+        width: auto;
+        margin: unset;
     }
 }
 
