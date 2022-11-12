@@ -1,4 +1,82 @@
-.footerp {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    .footer_container-left {
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+    }
+}
+
+.footer_container-left p,
+.footer_container-right p {
+    font-weight: 700;
+    margin: 8px;
+}
+
+.footer_container-right .shortcuts ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    li {
+        margin: 8px;
+        border-right: 1px solid goldenrod;
+        &:last-child {
+            border-right: none;
+        }
+        a {
+            font-family: 'Arsenal', sans-serif;
+            text-decoration: none;
+            font-size: 18px;
+            padding-right: 12px;
+            margin-right: 4px;
+            &:hover {
+                color: goldenrod;
+            }
+        }
+    }
+}
+
+.footer_container p {
+    width: auto;
+}
+
+.footer-copyrights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .footer_container {
+        flex-direction: column;
+        width: 100%;
+        .footer_container-left {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .footer_container-right .shortcuts ul {
+        align-items: center;
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 460px) {
+    .footer_container-right .shortcuts ul {
+        width: 100%;
+        flex-direction: column;
+        li {
+            border-right: none;
+            a {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
 }
