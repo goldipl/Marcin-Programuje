@@ -1,0 +1,26 @@
+.colorSection {
+    position: relative;
+}
+
+.colorSection::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-image: url("../img/wave_shape.svg");
+    width: 100vw;
+    height: 80px;
+    transform: rotate(180deg);
+    z-index: 11;
+    display: block;
+}
+
+.colorSection.footer-section::before {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .colorSection::before {
+        height: 40px;
+    } 
+}
