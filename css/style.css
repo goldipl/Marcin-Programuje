@@ -891,6 +891,11 @@ AND SMALLER DEVICES ALSO */
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-250%, #00fff7), color-stop(95%, #000000));
+  background: linear-gradient(to bottom, #00fff7 -250%, #000000 95%);
+  color: #FFFFFF;
+  margin-top: 16px;
+  font-weight: 400;
 }
 
 @media (max-width: 1200px) {

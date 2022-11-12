@@ -49,6 +49,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background: linear-gradient(to bottom, #00fff7 -250%, #000000 95%);
+    color: #FFFFFF;
+    margin-top: 16px;
+    font-weight: 400;
 }
 
 @media (max-width: 1200px) {
