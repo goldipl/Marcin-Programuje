@@ -927,11 +927,22 @@ AND SMALLER DEVICES ALSO */
 
 @media (max-width: 1200px) {
   .footer_container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+  }
+  .footer_container p {
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
   .footer_container .footer_container-left {
     -webkit-box-orient: vertical;

@@ -57,8 +57,19 @@
 
 @media (max-width: 1200px) {
     .footer_container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer_container {
         flex-direction: column;
         width: 100%;
+        p {
+            border-bottom: 1px solid #FFF;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+        }
         .footer_container-left {
             flex-direction: column;
             width: 100%;
