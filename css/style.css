@@ -769,6 +769,13 @@ AND SMALLER DEVICES ALSO */
   }
 }
 
+@media (max-width: 360px) {
+  .about_me_container .about_me_container-left img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .large_services_container {
   display: -webkit-box;
   display: -ms-flexbox;
