@@ -290,14 +290,20 @@ nav li {
   text-decoration: none;
 }
 
+.fullWidthBurger {
+  margin-right: 0 !important;
+}
+
 @media (min-width: 1201px) {
   .mobileMenu {
     visibility: hidden !important;
   }
 }
 
-.fullWidthBurger {
-  margin-right: 0 !important;
+@media (max-width: 360px) {
+  nav a.logo {
+    margin: -24px 0 0 8px;
+  }
 }
 
 /* CENTERED TEXT ANIMATION */
