@@ -128,25 +128,32 @@ nav li {
 .hamburger {
     position: absolute;
     right: 10px;
-    top: 16px;
+    top: 8px;
     z-index: 9999;
     width: 40px;
     height: 40px;
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
-}
-
-.hamburger .bar2 {
-    height: 2px;
-    background: goldenrod;
-    margin: 5px auto;
-}
-
-.hamburger .bar3 {
-    height: 2px;
-    background: goldenrod;
-    margin: 14px auto;
+    .bar1,
+    .bar2,
+    .bar3 {
+        height: 2px;
+        background: goldenrod;
+        margin: 8px auto;
+    }
+    &::after {
+        font-family: 'Arsenal', sans-serif;
+        content: 'MENU';
+        position: absolute;
+        top: 32px;
+        right: 4px;
+        color: goldenrod;
+        font-size: 12px;
+    }
+    &.active::after {
+        display: none;
+    }
 }
 
 .hamburger.active .bar1 {
@@ -155,8 +162,8 @@ nav li {
     margin: 6px auto;
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
-    -webkit-transform: rotate(45deg) translateX(2px) translateY(4px);
-    transform: rotate(45deg) translateX(3px) translateY(5px);
+    -webkit-transform: rotate(45deg) translateX(8px) translateY(8px);
+    transform: rotate(45deg) translateX(8px) translateY(8px);
 }
 
 .hamburger.active .bar2 {
@@ -169,8 +176,8 @@ nav li {
     margin: 6px auto;
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
-    -webkit-transform: rotate(-45deg) translateX(10px) translateY(-12px);
-    transform: rotate(-45deg) translateX(6px) translateY(-10px);
+    -webkit-transform: rotate(-45deg) translateX(6px) translateY(-6px);
+    transform: rotate(-45deg) translateX(6px) translateY(-6px);
 }
 
 @media (max-width: 1200px) {
