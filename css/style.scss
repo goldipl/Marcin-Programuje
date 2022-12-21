@@ -264,6 +264,10 @@ img {
     text-decoration: none;
     color: #000000;
     transition: 0.6s;
+    span {
+        font-size: 10px;
+        margin-left: 4px;
+    }
 }
 
 .live-code__container .live-link:hover,
