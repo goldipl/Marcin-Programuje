@@ -1026,21 +1026,6 @@ section {
   padding: 80px 0;
 }
 
-/* TECHNOLOGIES 'IMG TABLE' */
-.col {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.row {
-  flex-basis: 60%;
-}
-
-.row img {
-  padding: 20px;
-}
-
 /* TECHNOLOGIES LOGOS */
 .techLogoImg {
   width: 120px;
@@ -1172,15 +1157,5 @@ ol li {
   }
   .row {
     flex-basis: 30%;
-  }
-}
-@media (max-width: 500px) {
-  .contP {
-    width: 45vh;
-    height: 21vh;
-  }
-  .contCert {
-    width: 45vh;
-    height: 35vh;
   }
 }/*# sourceMappingURL=style.css.map */
