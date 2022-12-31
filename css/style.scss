@@ -10,6 +10,7 @@
 @import 'about_me';
 @import 'services';
 @import 'certificate';
+@import 'projects';
 @import 'contact';
 @import 'footer';
 html {
@@ -159,68 +160,6 @@ section {
 .far:hover,
 .bluelink:hover {
     color: goldenrod;
-}
-
-
-/* PROJECTS FLEXBOX */
-
-.colP {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.rowP {
-    flex-basis: 20%;
-}
-
-.rowP p {
-    min-height: 162px;
-}
-
-.contP {
-    position: relative;
-    display: block;
-    width: 50vh;
-    height: 24vh;
-    margin: 20px;
-    box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
-    overflow: hidden;
-    text-align: center;
-    color: white;
-}
-
-.contCert {
-    display: block;
-    width: 30vw;
-    height: auto;
-    border: 1px solid black;
-    overflow: hidden;
-    text-align: center;
-    color: white;
-    margin: 16px auto;
-}
-
-.contImg {
-    max-width: 100%;
-    height: auto;
-}
-
-.contCert img:hover {
-    box-shadow: 0 0 15px rgb(78, 27, 114);
-    -moz-box-shadow: 0 0 15px rgb(78, 27, 114);
-    -webkit-box-shadow: 0 0 15px rgb(78, 27, 114);
-    cursor: pointer;
-}
-
-img {
-    transition: all .2s linear;
-}
-
-.contCert img:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    cursor: pointer;
 }
 
 .smicons {
