@@ -14,7 +14,7 @@
 		}
         .contCert {
             display: block;
-            height: 280px;
+            height: auto;
             width: auto;
             border: 1px solid black;
             overflow: hidden;
@@ -23,7 +23,7 @@
             margin: 16px auto;
             img {
                 transition: all .2s linear;
-                height: 280px;
+                height: auto;
                 &:hover {
                     box-shadow: 0 0 15px rgb(78, 27, 114);
                     -moz-box-shadow: 0 0 15px rgb(78, 27, 114);

@@ -739,7 +739,7 @@ AND SMALLER DEVICES ALSO */
 }
 #certificate .certificates_container .certificate_slot .contCert {
   display: block;
-  height: 280px;
+  height: auto;
   width: auto;
   border: 1px solid black;
   overflow: hidden;
@@ -749,7 +749,7 @@ AND SMALLER DEVICES ALSO */
 }
 #certificate .certificates_container .certificate_slot .contCert img {
   transition: all 0.2s linear;
-  height: 280px;
+  height: auto;
 }
 #certificate .certificates_container .certificate_slot .contCert img:hover {
   box-shadow: 0 0 15px rgb(78, 27, 114);
