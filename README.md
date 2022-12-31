@@ -2,6 +2,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Screens](#screens)
+* [Core Web Vitals Test](#core-web-vitals-test)
 * [Live](#live-star2)
 
 ## General info
@@ -21,6 +22,10 @@ Project was created with:
 * Mobile version :iphone:     
 
 ![Screenshot](Screen02.jpg) 
+
+## Core Web Vitals Test   
+
+![Screenshot](Screen03.jpg) 
 
 ## Live :star2:
 https://goldipl.github.io/Marcin-Programuje/
