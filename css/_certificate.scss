@@ -23,6 +23,7 @@
             margin: 16px auto;
             img {
                 transition: all .2s linear;
+                width: 400px;
                 height: auto;
                 &:hover {
                     box-shadow: 0 0 15px rgb(78, 27, 114);
@@ -38,7 +39,7 @@
 	}
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1560px) {
     #certificate .certificates_container {
         .certificate_slot {
             width: 40vw;
@@ -49,7 +50,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     #certificate .certificates_container {
         .certificate_slot {
             width: 90vw;
@@ -67,6 +68,11 @@
             width: 100vw;
             p {
                 width: 80vw;
+            }
+            .contCert {
+                img {
+                    width: 90vw;
+                }
             }
         }
     }

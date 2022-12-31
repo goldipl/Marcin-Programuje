@@ -749,6 +749,7 @@ AND SMALLER DEVICES ALSO */
 }
 #certificate .certificates_container .certificate_slot .contCert img {
   transition: all 0.2s linear;
+  width: 400px;
   height: auto;
 }
 #certificate .certificates_container .certificate_slot .contCert img:hover {
@@ -761,7 +762,7 @@ AND SMALLER DEVICES ALSO */
   cursor: pointer;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1560px) {
   #certificate .certificates_container .certificate_slot {
     width: 40vw;
   }
@@ -769,7 +770,7 @@ AND SMALLER DEVICES ALSO */
     width: 40vw;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   #certificate .certificates_container .certificate_slot {
     width: 90vw;
   }
@@ -784,6 +785,9 @@ AND SMALLER DEVICES ALSO */
   }
   #certificate .certificates_container .certificate_slot p {
     width: 80vw;
+  }
+  #certificate .certificates_container .certificate_slot .contCert img {
+    width: 90vw;
   }
 }
 .projects_container {
