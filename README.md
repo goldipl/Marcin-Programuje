@@ -6,7 +6,7 @@
 * [Live](#live-star2)
 
 ## General info
-My new webpage.
+My brandnew portfolio site. It contains a complete set of information about my person, my experience, skills as well as projects located in the tab - portfolio.
 
 ## Technologies
 Project was created with:
