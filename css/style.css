@@ -648,6 +648,18 @@ AND SMALLER DEVICES ALSO */
   margin-top: 4px;
 }
 
+#experience .experience-slot {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0;
+}
+#experience .experience-slot p {
+  padding: 2px;
+}
+#experience .experience-slot .golden-text {
+  color: goldenrod;
+}
+
 @media (max-width: 1000px) {
   .about_me_container {
     flex-direction: column;
