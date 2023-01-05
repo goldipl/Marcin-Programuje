@@ -1,7 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Screens](#screens)
+* [Screenshots](#screenshots)
 * [Core Web Vitals Test](#core-web-vitals-test)
 * [Live](#live-star2)
 
@@ -14,7 +14,7 @@ Project was created with:
 * SCSS
 * JavaScript
 
-## Screens
+## Screenshots
 * Desktop version :computer:     
 
 ![Screenshot](Screen01.jpg) 
