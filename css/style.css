@@ -806,7 +806,7 @@ AND SMALLER DEVICES ALSO */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   width: 80vw;
   max-width: 2000px;
   margin: 24px auto;
