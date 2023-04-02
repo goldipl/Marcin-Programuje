@@ -1144,6 +1144,10 @@ iframe.google-map {
   animation: arrow-slide ease-in-out 0.4s;
 }
 
+.scroll-arrow-up.show i {
+  transform: rotate(90deg);
+}
+
 @keyframes arrow-slide {
   0% {
     right: -40px;
