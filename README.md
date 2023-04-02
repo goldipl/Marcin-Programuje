@@ -13,6 +13,7 @@ Project was created with:
 * HTML5
 * SCSS
 * JavaScript
+* Boxicons
 
 ## Screenshots
 * Desktop version :computer:     
