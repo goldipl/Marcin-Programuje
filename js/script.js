@@ -30,3 +30,17 @@ fadeAnimation = () => {
 }
 
 window.addEventListener("scroll", fadeAnimation);
+
+/* scroll arrow up */
+const scrollArrowUp = document.querySelector(".scroll-arrow-up");
+
+window.onscroll = () => {
+	if (window.scrollY >= window.innerHeight) {
+		scrollArrowUp.classList.add("show");
+        scrollArrowUp.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+	} else {
+		scrollArrowUp.classList.remove("show");
+	}
+};
