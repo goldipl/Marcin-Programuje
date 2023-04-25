@@ -135,6 +135,7 @@ nav li {
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     .bar1,
     .bar2,
     .bar3 {
