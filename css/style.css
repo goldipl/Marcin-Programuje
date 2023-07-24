@@ -835,10 +835,13 @@ AND SMALLER DEVICES ALSO */
   cursor: pointer;
   padding: 16px;
   box-shadow: 0 0px 22px -8px #004846;
+  border: 2px solid rgba(255, 255, 255, 0);
+  box-sizing: border-box;
 }
 
 .reference-gallery-item:hover {
   opacity: 1;
+  border: 2px solid goldenrod;
 }
 
 .reference-gallery-item img {
