@@ -81,6 +81,7 @@
     height: 100%;
     object-fit: contain;
     user-select: none;
+    background-color: #FFFFFF;
 }
 .lightbox-prev,
 .lightbox-next {
@@ -101,6 +102,17 @@
 .lightbox-prev:hover,
 .lightbox-next:hover {
     opacity: .8;
+}
+.fa-window-close {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    &:hover {
+        opacity: .8; 
+    }
 }
 
 @media (max-width: 767px) {

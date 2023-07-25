@@ -4,16 +4,19 @@ const lightBoxContent = document.createElement("div");
 const lightBoxImg = document.createElement("img");
 const lightBoxPrev = document.createElement("div");
 const lightBoxNext = document.createElement("div");
+const lightBoxClose = document.createElement("i");
 
 lightBoxContainer.classList.add("lightbox");
 lightBoxContent.classList.add("lightbox-content");
 lightBoxPrev.classList.add("fa", "fa-angle-left", "lightbox-prev");
 lightBoxNext.classList.add("fa", "fa-angle-right", "lightbox-next");
+lightBoxClose.classList.add("fa", "fa-window-close", "lightbox-close");
 
 lightBoxContainer.appendChild(lightBoxContent);
 lightBoxContent.appendChild(lightBoxImg);
 lightBoxContent.appendChild(lightBoxPrev);
 lightBoxContent.appendChild(lightBoxNext);
+lightBoxContent.appendChild(lightBoxClose);
 
 document.body.appendChild(lightBoxContainer);
 
@@ -50,9 +53,10 @@ function nextImage() {
 }
 lightBoxPrev.addEventListener("click", prevImage);
 lightBoxNext.addEventListener("click", nextImage);
+lightBoxClose.addEventListener("click", closeLightBox);
 
-function closeLightBox() {
-    if (this === event.target) {
+function closeLightBox(e) {
+    if (this === e.target) {
         lightBoxContainer.style.display = "none";
     }
 }
