@@ -1,3 +1,9 @@
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
 .about_me_container {
     display: flex;
     flex-direction: row;
@@ -5,8 +11,27 @@
     margin: 0 auto;
     .about_me_container-left {
         width: 30%;
-        img {
-            border-radius: 16px;
+        .image {
+            --border-size: 3px;
+            --border-angle: 0turn;
+            background-image: conic-gradient(
+                from var(--border-angle), rgb(255, 255, 255), rgb(255, 255, 255) 50%, rgb(255, 255, 255)),
+                conic-gradient(from var(--border-angle), transparent 20%, #2cc5c0, #fcb736);
+            background-size: calc(100% - (var(--border-size) * 2))
+                    calc(100% - (var(--border-size) * 2)),
+                    cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            animation: bg-spin 3s linear infinite;
+            @keyframes bg-spin {
+                to {
+                    --border-angle: 1turn;
+                }
+            }
+            img {
+                padding: 8px;
+                margin-bottom: -4px;
+            }
         }
     }
     .about_me_container-right {
@@ -57,6 +82,10 @@
             width: 100%;
             margin: 0 auto 24px;
             padding-bottom: 40px;
+            .image {
+                width: max-content;
+                margin: 0 auto;
+            }
             p {
                 width: 100%;
             }
