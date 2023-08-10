@@ -596,7 +596,7 @@ AND SMALLER DEVICES ALSO */
   width: 30%;
 }
 .about_me_container .about_me_container-left .image {
-  --border-size: 3px;
+  --border-size: 5px;
   --border-angle: 0turn;
   background-image: conic-gradient(from var(--border-angle), rgb(255, 255, 255), rgb(255, 255, 255) 50%, rgb(255, 255, 255)), conic-gradient(from var(--border-angle), transparent 20%, #2cc5c0, #fcb736);
   background-size: calc(100% - var(--border-size) * 2) calc(100% - var(--border-size) * 2), cover;
