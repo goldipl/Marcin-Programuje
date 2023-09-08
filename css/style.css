@@ -920,9 +920,9 @@ AND SMALLER DEVICES ALSO */
 
 .lightbox-content {
   position: relative;
-  width: 70%;
-  height: 70%;
-  margin: 8% auto;
+  width: 80vw;
+  height: 90vh;
+  margin: 5% auto;
 }
 
 .lightbox-content img {
