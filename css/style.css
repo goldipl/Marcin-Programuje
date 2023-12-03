@@ -846,7 +846,7 @@ AND SMALLER DEVICES ALSO */
 .reference-gallery-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: #fff;
   width: 80%;
   margin: 0 auto;
