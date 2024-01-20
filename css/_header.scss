@@ -19,6 +19,9 @@
     background: linear-gradient(to right, #ffd702 30%, #d18c0e 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255,255,255,0);
+    transform: translateX(-100vw);
+    animation: 1s slidefromLeft  forwards 0.2s;
+    opacity: 0;
 }
 
 

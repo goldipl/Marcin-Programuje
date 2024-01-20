@@ -274,6 +274,12 @@ h1.centeredText {
     opacity: 1;
   }
 }
+@keyframes slidefromLeft {
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 /* SLIDE ANIMATION */
 body #section01 {
   overflow-x: hidden;
@@ -338,6 +344,9 @@ section.whiteSection.magicSquare canvas {
   background: linear-gradient(to right, #ffd702 30%, #d18c0e 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  transform: translateX(-100vw);
+  animation: 1s slidefromLeft forwards 0.2s;
+  opacity: 0;
 }
 
 /* CENTERED TEXT ON MAIN PAGE */

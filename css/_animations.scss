@@ -13,6 +13,13 @@ h1.centeredText {
     }
 }
 
+@keyframes slidefromLeft {
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 
 /* SLIDE ANIMATION */
 
