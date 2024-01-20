@@ -112,6 +112,9 @@ h3 {
 section {
     overflow-x: hidden;
     padding: 80px 0;
+    &.portfolio-section {
+        padding: 40px 0;
+    }
 }
 
 /* TECHNOLOGIES LOGOS */
