@@ -1,0 +1,101 @@
+#experience {
+  .experience-slot {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+    &.projects-completed {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid gold;
+      padding: 32px 0;
+      margin: 0 auto;
+      width: 60vw;
+    }
+    &.last-slot {
+      border-bottom: 0;
+      margin-bottom: 40px;
+    }
+    p {
+      width: unset;
+      padding: 2px;
+    }
+    .golden-text {
+      color: goldenrod;
+    }
+    .experience-title {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .experience-project {
+      display: flex;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 4px;
+      width: max-content;
+      margin: 6px auto;
+      width: 640px;
+      &:last-of-type {
+        margin-bottom: 16px;
+      }
+      &__el {
+        font-size: 1rem;
+        min-width: 196px;
+        white-space: pre;
+        text-align: left;
+        margin-right: 16px;
+        .project-link {
+          color: white;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .technology-box-list {
+        display: flex;
+        flex-wrap: wrap;
+        &__el {
+          font-family: "Arsenal", sans-serif;
+          font-weight: 300;
+          font-size: 1rem;
+          padding: 6px;
+          border-style: none;
+          overflow: hidden;
+          border: 1px solid goldenrod;
+          margin: 4px;
+          &:hover {
+            background-color: goldenrod;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  #experience {
+    .experience-slot {
+      &.projects-completed {
+        width: 100%;
+      }
+      .experience-project {
+        width: 94%;
+        &:last-of-type {
+          margin-bottom: 16px;
+        }
+        &__el {
+          min-width: 140px;
+          padding: 1rem 1rem 1rem 0.3rem;
+          font-size: 0.8rem;
+        }
+        .technology-box-list {
+          padding: 1rem 0;
+          &__el {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
