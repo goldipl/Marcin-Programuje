@@ -519,6 +519,41 @@ AND SMALLER DEVICES ALSO */
   padding: 10px 25px;
 }
 
+/* BUTTON GOLD */
+.button-gold {
+  position: relative;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 10px;
+  border-style: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid gold;
+  cursor: pointer;
+}
+.button-gold-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+
+.button-gold::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -150%;
+  width: 100%;
+  height: 4px;
+  background-color: gold;
+  transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
+}
+
+.button-gold:hover::before {
+  right: 0;
+}
+
 .magicButton {
   font-family: "Arsenal", sans-serif;
   display: flex;
@@ -550,20 +585,20 @@ AND SMALLER DEVICES ALSO */
 
 .magicButton.red:hover {
   background-color: red;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .magicButton.goldenrod:hover {
   background-color: gold;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .magicButton.green:hover {
   background-color: green;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .colorSection {
@@ -649,18 +684,6 @@ AND SMALLER DEVICES ALSO */
   width: 300px;
   padding: 0;
   margin-top: 4px;
-}
-
-#experience .experience-slot {
-  display: flex;
-  flex-direction: column;
-  margin: 24px 0;
-}
-#experience .experience-slot p {
-  padding: 2px;
-}
-#experience .experience-slot .golden-text {
-  color: goldenrod;
 }
 
 @media (max-width: 1000px) {
@@ -1122,6 +1145,102 @@ AND SMALLER DEVICES ALSO */
   .footer_container-right .shortcuts ul li a {
     padding: 0;
     margin: 0;
+  }
+}
+#experience .experience-slot {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0;
+}
+#experience .experience-slot.projects-completed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gold;
+  padding: 32px 0;
+  margin: 0 auto;
+  width: 60vw;
+}
+#experience .experience-slot.last-slot {
+  border-bottom: 0;
+  margin-bottom: 40px;
+}
+#experience .experience-slot p {
+  width: unset;
+  padding: 2px;
+}
+#experience .experience-slot .golden-text {
+  color: goldenrod;
+}
+#experience .experience-slot .experience-title {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+#experience .experience-slot .experience-project {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 6px auto;
+  width: 640px;
+}
+#experience .experience-slot .experience-project:last-of-type {
+  margin-bottom: 16px;
+}
+#experience .experience-slot .experience-project__el {
+  font-size: 1rem;
+  min-width: 196px;
+  white-space: pre;
+  text-align: left;
+  margin-right: 16px;
+}
+#experience .experience-slot .experience-project__el .project-link {
+  color: white;
+}
+#experience .experience-slot .experience-project__el .project-link:hover {
+  text-decoration: none;
+}
+#experience .experience-slot .experience-project .technology-box-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#experience .experience-slot .experience-project .technology-box-list__el {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 6px;
+  border-style: none;
+  overflow: hidden;
+  border: 1px solid goldenrod;
+  margin: 4px;
+}
+#experience .experience-slot .experience-project .technology-box-list__el:hover {
+  background-color: goldenrod;
+  color: white;
+}
+
+@media (max-width: 760px) {
+  #experience .experience-slot.projects-completed {
+    width: 100%;
+  }
+  #experience .experience-slot .experience-project {
+    width: 94%;
+  }
+  #experience .experience-slot .experience-project:last-of-type {
+    margin-bottom: 16px;
+  }
+  #experience .experience-slot .experience-project__el {
+    min-width: 140px;
+    padding: 1rem 1rem 1rem 0.3rem;
+    font-size: 0.8rem;
+  }
+  #experience .experience-slot .experience-project .technology-box-list {
+    padding: 1rem 0;
+  }
+  #experience .experience-slot .experience-project .technology-box-list__el {
+    font-size: 0.9rem;
   }
 }
 html {
