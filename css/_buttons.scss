@@ -1,121 +1,156 @@
 /* BUTTON BLACK */
 
 .buttonBlack {
-    position: relative;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    padding: 10px;
-    margin: 10px;
-    border-style: none;
-    overflow: hidden;
-    background-color: rgba(255,255,255,0);
-    border: 1px solid #000000;
-    cursor: pointer;
+  position: relative;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px;
+  border-style: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #000000;
+  cursor: pointer;
 }
 
 .buttonBlack::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: -150%;
-    width: 100%;
-    height: 4px;
-    background-color: #004644;
-    transition: .7s cubic-bezier(0, 1.8, 1, 1);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -150%;
+  width: 100%;
+  height: 4px;
+  background-color: #004644;
+  transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
 }
 
 .buttonBlack:hover::before {
-    right: 0;
+  right: 0;
 }
 
 .buttonBlackLink {
-    color: black;
-    text-decoration: none;
-    padding: 10px 25px;
+  color: black;
+  text-decoration: none;
+  padding: 10px 25px;
 }
-
 
 /* BUTTON WHITE*/
 
 .buttonWhite {
-    position: relative;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    padding: 10px;
-    margin: 10px;
-    border-style: none;
-    overflow: hidden;
-    background-color: rgba(255,255,255,0);
-    border: 1px solid white;
-    cursor: pointer;
+  position: relative;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px;
+  border-style: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .buttonWhite::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: -150%;
-    width: 100%;
-    height: 4px;
-    background-color: white;
-    transition: .7s cubic-bezier(0, 1.8, 1, 1);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -150%;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
 }
 
 .buttonWhite:hover::before {
-    right: 0;
+  right: 0;
 }
 
 .buttonWhiteLink {
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+
+/* BUTTON GOLD */
+
+.button-gold {
+  position: relative;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 10px;
+  border-style: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid gold;
+  cursor: pointer;
+  &-link {
     color: white;
     text-decoration: none;
     padding: 10px 25px;
+  }
+}
+
+.button-gold::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -150%;
+  width: 100%;
+  height: 4px;
+  background-color: gold;
+  transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
+}
+
+.button-gold:hover::before {
+  right: 0;
 }
 
 .magicButton {
-    font-family: 'Arsenal', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 40px;
-    font-size: 24px;
-    line-height: 24px;
-    margin: auto;
-    transition: 0.6s;
-    cursor: pointer;
+  font-family: "Arsenal", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 24px;
+  margin: auto;
+  transition: 0.6s;
+  cursor: pointer;
 }
 
 .magicButton.red {
-    border: 1px solid red;
-    color: red;
+  border: 1px solid red;
+  color: red;
 }
 
 .magicButton.goldenrod {
-    border: 1px solid gold;
-    color: gold;
+  border: 1px solid gold;
+  color: gold;
 }
 
 .magicButton.green {
-    border: 1px solid green;
-    color: green;
+  border: 1px solid green;
+  color: green;
 }
 
 .magicButton.red:hover {
-    background-color: red;
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
+  background-color: red;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .magicButton.goldenrod:hover {
-    background-color: gold;
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
+  background-color: gold;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .magicButton.green:hover {
-    background-color: green;
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
+  background-color: green;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
