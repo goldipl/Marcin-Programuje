@@ -718,7 +718,10 @@ AND SMALLER DEVICES ALSO */
   }
 }
 @media (max-width: 360px) {
-  .about_me_container .about_me_container-left img {
+  .about_me_container .about_me_container-left .image {
+    width: 100%;
+  }
+  .about_me_container .about_me_container-left .image img {
     width: 100%;
     height: auto;
   }

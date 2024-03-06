@@ -1,99 +1,115 @@
 @property --border-angle {
-    syntax: "<angle>";
-    inherits: true;
-    initial-value: 0turn;
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 
 .about_me_container {
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    margin: 0 auto;
-    .about_me_container-left {
-        width: 30%;
-        .image {
-            --border-size: 5px;
-            --border-angle: 0turn;
-            background-image: conic-gradient(
-                from var(--border-angle), rgb(255, 255, 255), rgb(255, 255, 255) 50%, rgb(255, 255, 255)),
-                conic-gradient(from var(--border-angle), transparent 20%, #2cc5c0, #fcb736);
-            background-size: calc(100% - (var(--border-size) * 2))
-                    calc(100% - (var(--border-size) * 2)),
-                    cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            animation: bg-spin 3s linear infinite;
-            @keyframes bg-spin {
-                to {
-                    --border-angle: 1turn;
-                }
-            }
-            img {
-                padding: 8px;
-                margin-bottom: -4px;
-            }
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  margin: 0 auto;
+  .about_me_container-left {
+    width: 30%;
+    .image {
+      --border-size: 5px;
+      --border-angle: 0turn;
+      background-image: conic-gradient(
+          from var(--border-angle),
+          rgb(255, 255, 255),
+          rgb(255, 255, 255) 50%,
+          rgb(255, 255, 255)
+        ),
+        conic-gradient(
+          from var(--border-angle),
+          transparent 20%,
+          #2cc5c0,
+          #fcb736
+        );
+      background-size: calc(100% - (var(--border-size) * 2))
+          calc(100% - (var(--border-size) * 2)),
+        cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      animation: bg-spin 3s linear infinite;
+      @keyframes bg-spin {
+        to {
+          --border-angle: 1turn;
         }
+      }
+      img {
+        padding: 8px;
+        margin-bottom: -4px;
+      }
     }
-    .about_me_container-right {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        width: 70%;
-        height: 400px;
-        margin-left: 40px;
-    } 
+  }
+  .about_me_container-right {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 70%;
+    height: 400px;
+    margin-left: 40px;
+  }
 }
 
 .about_me_container .about_me_container-right p {
-    width: 100%;
-    text-align: justify;
+  width: 100%;
+  text-align: justify;
 }
 
 .about_me_container .about_me_container-right h1 {
-    text-align: left;
-    padding-left: 16px;
+  text-align: left;
+  padding-left: 16px;
 }
 
 .about_me_container .about_me_container-left p {
-    width: 300px;
-    padding: 0;
-    margin-top: 4px;
+  width: 300px;
+  padding: 0;
+  margin-top: 4px;
 }
 
 @media (max-width: 1000px) {
-    .about_me_container {
-        flex-direction: column;
-        width: 90vw;
-        .about_me_container-left {
-            width: 100%;
-            margin: 0 auto 24px;
-            padding-bottom: 40px;
-            .image {
-                width: max-content;
-                margin: 0 auto;
-            }
-            p {
-                width: 100%;
-            }
-        }
-        .about_me_container-right {
-            width: 100%;
-            margin: 0 auto;
-            height: auto;
-            p {
-                width: 100%;
-            }
-        }
+  .about_me_container {
+    flex-direction: column;
+    width: 90vw;
+    .about_me_container-left {
+      width: 100%;
+      margin: 0 auto 24px;
+      padding-bottom: 40px;
+      .image {
+        width: max-content;
+        margin: 0 auto;
+      }
+      p {
+        width: 100%;
+      }
     }
-    .about_me_container .about_me_container-right p,
-    .about_me_container .about_me_container-right h1 {
-        text-align: center;
+    .about_me_container-right {
+      width: 100%;
+      margin: 0 auto;
+      height: auto;
+      p {
+        width: 100%;
+      }
     }
+  }
+  .about_me_container .about_me_container-right p,
+  .about_me_container .about_me_container-right h1 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 360px) {
-    .about_me_container .about_me_container-left img {
+  .about_me_container {
+    .about_me_container-left {
+      .image {
         width: 100%;
-        height: auto;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
     }
+  }
 }
