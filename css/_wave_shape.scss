@@ -1,28 +1,32 @@
-.colorSection {
-    position: relative;
+.color-section,
+.keyboard-section {
+  position: relative;
 }
 
-.colorSection::before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    background-image: url("../img/wave_shape.svg");
-    background-size: 100vw 80px;
-    width: 100vw;
-    height: 80px;
-    transform: rotate(180deg);
-    z-index: 11;
-    display: block;
+.color-section::before,
+.keyboard-section::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-image: url("../img/wave_shape.svg");
+  background-size: 100vw 80px;
+  width: 100vw;
+  height: 80px;
+  transform: rotate(180deg);
+  z-index: 11;
+  display: block;
 }
 
-.colorSection.footer-section::before {
-    display: none;
+.color-section.footer-section::before,
+.keyboard-section.footer-section::before {
+  display: none;
 }
 
 @media (max-width: 800px) {
-    .colorSection::before {
-        background-size: 100vw 40px;
-        height: 40px;
-    } 
+  .color-section::before,
+  .keyboard-section::before {
+    background-size: 100vw 40px;
+    height: 40px;
+  }
 }

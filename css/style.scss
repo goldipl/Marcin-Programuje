@@ -101,12 +101,23 @@ h3 {
   font-size: 1.3rem;
 }
 
-.whiteSection {
+.white-section {
   background-color: #ffffff;
   color: #000000;
 }
 
-.colorSection {
+.keyboard-section {
+  background-image: linear-gradient(to top, #2e747185 -125%, #000000a9 95%),
+    url(../img/background_image.jpeg);
+  color: #ffffff;
+  margin-top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600vh;
+  background-attachment: fixed;
+}
+
+.color-section {
   background: linear-gradient(to top, #00fff7 -125%, #000000 95%);
   color: #ffffff;
 }
@@ -128,14 +139,14 @@ section {
 
 /* SOCIAL MEDIA ICONS - FOOTER */
 
-.colorSection .fab {
+.color-section .fab {
   font-size: 35px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.colorSection .far {
+.color-section .far {
   font-size: 35px;
   padding-bottom: 20px;
   padding-left: 10px;

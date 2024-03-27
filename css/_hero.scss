@@ -1,12 +1,14 @@
 .hero {
   position: relative;
   height: 100dvh;
-  background-image: url("../img/background_image.jpeg");
+  background-image: linear-gradient(to top, #00fff721 -125%, #00000087 95%),
+    url(../img/background_image.jpeg);
   color: #ffffff;
   margin-top: 0;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 600vh;
+  background-attachment: fixed;
   &.main-page {
     display: flex;
     justify-content: center;
@@ -40,6 +42,7 @@
               #0000005b 15%,
               rgb(231, 197, 0) 70%
             );
+            background: linear-gradient(#0000005b 15%, rgb(231, 197, 0) 70%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

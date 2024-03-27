@@ -317,12 +317,12 @@ body #section01 {
     opacity: 1;
   }
 }
-section.whiteSection.magicSquare {
+section.white-section.magicSquare {
   margin: 0;
   padding: 0;
 }
 
-section.whiteSection.magicSquare canvas {
+section.white-section.magicSquare canvas {
   height: auto !important;
   width: 100vw !important;
 }
@@ -541,11 +541,13 @@ AND SMALLER DEVICES ALSO */
   color: #ffffff;
 }
 
-.colorSection {
+.color-section,
+.keyboard-section {
   position: relative;
 }
 
-.colorSection::before {
+.color-section::before,
+.keyboard-section::before {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -559,12 +561,14 @@ AND SMALLER DEVICES ALSO */
   display: block;
 }
 
-.colorSection.footer-section::before {
+.color-section.footer-section::before,
+.keyboard-section.footer-section::before {
   display: none;
 }
 
 @media (max-width: 800px) {
-  .colorSection::before {
+  .color-section::before,
+  .keyboard-section::before {
     background-size: 100vw 40px;
     height: 40px;
   }
@@ -1190,12 +1194,13 @@ AND SMALLER DEVICES ALSO */
 .hero {
   position: relative;
   height: 100dvh;
-  background-image: url("../img/background_image.jpeg");
+  background-image: linear-gradient(to top, rgba(0, 255, 247, 0.1294117647) -125%, rgba(0, 0, 0, 0.5294117647) 95%), url(../img/background_image.jpeg);
   color: #ffffff;
   margin-top: 0;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 600vh;
+  background-attachment: fixed;
 }
 .hero.main-page {
   display: flex;
@@ -1230,7 +1235,7 @@ AND SMALLER DEVICES ALSO */
 }
 .hero.main-page .hero-left h2 span.typing {
   font-family: Arsenal, sans-serif;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3568627451) 15%, rgb(231, 197, 0) 70%);
+  background: linear-gradient(rgba(0, 0, 0, 0.3568627451) 15%, rgb(231, 197, 0) 70%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1440,12 +1445,22 @@ h3 {
   font-size: 1.3rem;
 }
 
-.whiteSection {
+.white-section {
   background-color: #ffffff;
   color: #000000;
 }
 
-.colorSection {
+.keyboard-section {
+  background-image: linear-gradient(to top, rgba(46, 116, 113, 0.5215686275) -125%, rgba(0, 0, 0, 0.662745098) 95%), url(../img/background_image.jpeg);
+  color: #ffffff;
+  margin-top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600vh;
+  background-attachment: fixed;
+}
+
+.color-section {
   background: linear-gradient(to top, #00fff7 -125%, #000000 95%);
   color: #ffffff;
 }
@@ -1465,14 +1480,14 @@ section.portfolio-section {
 }
 
 /* SOCIAL MEDIA ICONS - FOOTER */
-.colorSection .fab {
+.color-section .fab {
   font-size: 35px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.colorSection .far {
+.color-section .far {
   font-size: 35px;
   padding-bottom: 20px;
   padding-left: 10px;
