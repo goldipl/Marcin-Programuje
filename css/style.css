@@ -1326,7 +1326,7 @@ AND SMALLER DEVICES ALSO */
     flex-direction: column;
   }
   .hero.main-page .hero-left .hero-buttons .hero-link {
-    width: 60vw;
+    width: auto;
     max-width: 240px;
     font-size: 15px;
     padding: 8px 24px;
