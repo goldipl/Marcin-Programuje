@@ -1,6 +1,6 @@
 /* BUTTON BLACK */
 
-.buttonBlack {
+.button-black {
   position: relative;
   font-family: "Arsenal", sans-serif;
   font-weight: 300;
@@ -12,9 +12,10 @@
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #000000;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-.buttonBlack::before {
+.button-black::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -25,11 +26,11 @@
   transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
 }
 
-.buttonBlack:hover::before {
+.button-black:hover::before {
   right: 0;
 }
 
-.buttonBlackLink {
+.button-black-link {
   color: black;
   text-decoration: none;
   padding: 10px 25px;
@@ -37,7 +38,7 @@
 
 /* BUTTON WHITE*/
 
-.buttonWhite {
+.button-white {
   position: relative;
   font-family: "Arsenal", sans-serif;
   font-weight: 300;
@@ -48,10 +49,11 @@
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid white;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.buttonWhite::before {
+.button-white::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -62,11 +64,11 @@
   transition: 0.7s cubic-bezier(0, 1.8, 1, 1);
 }
 
-.buttonWhite:hover::before {
+.button-white:hover::before {
   right: 0;
 }
 
-.buttonWhiteLink {
+.button-white-link {
   color: white;
   text-decoration: none;
   padding: 10px 25px;
@@ -85,6 +87,7 @@
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid gold;
+  border-radius: 4px;
   cursor: pointer;
   &-link {
     color: white;

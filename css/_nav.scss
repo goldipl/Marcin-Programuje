@@ -1,265 +1,264 @@
-
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to top, #00fff7 -125%, #000000 95%);
+  height: 60px;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0px 24px -4px goldenrod;
+  .menu_container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to top, #00fff7 -125%, #000000 95%);
-    height: 60px;
-    width: 100%;
-    z-index: 100;
-    box-shadow: 0 0px 24px -2px goldenrod;
-    .menu_container {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        width: 1200px;
-        margin: 0 auto;
-    }
+    align-content: center;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 nav a.logo {
-    position: relative;
-    font-family: 'Major Mono Display', monospace;
-    font-size: 28px;
-    font-weight: 400;
-    margin: -24px 0 0 16px;
-    text-decoration: none;
-    color: goldenrod;
-    margin-right: 200px;
-    span {
-        position: absolute;
-        top: 24px;
-        left: 40px;
-    }
+  position: relative;
+  font-family: "Major Mono Display", monospace;
+  font-size: 28px;
+  font-weight: 400;
+  margin: -24px 0 0 16px;
+  text-decoration: none;
+  color: goldenrod;
+  margin-right: 200px;
+  span {
+    position: absolute;
+    top: 24px;
+    left: 40px;
+  }
 }
 
 nav .desktopMenu {
-    position: relative;
-    display: flex;
-    height: 100%;
+  position: relative;
+  display: flex;
+  height: 100%;
 }
 
 nav .desktopMenu li {
-    font-family: 'Arsenal', sans-serif;
-    position: relative;
-    padding: 0px 24px;
-    cursor: pointer;
-    list-style: none;
-    height: 60px;
+  font-family: "Arsenal", sans-serif;
+  position: relative;
+  padding: 0px 24px;
+  cursor: pointer;
+  list-style: none;
+  height: 60px;
 }
 
 nav .desktopMenu li:nth-child(2) {
-    width: 180px;
-  }
+  width: 180px;
+}
 
 nav .desktopMenu li::after {
-    display: block;
-    content: '';
-    width: 8px;
-    height: 8px;
-    background: goldenrod;
-    position: absolute;
-    bottom: calc(50% - 6px);
-    left: -4px;
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: goldenrod;
+  position: absolute;
+  bottom: calc(50% - 6px);
+  left: -4px;
 }
 
 nav .desktopMenu li:first-of-type::after {
-    display: none;
+  display: none;
 }
 
 nav .desktopMenu li a {
-    display: block;
-    font-family: 'Julius Sans One', sans-serif;
-    position: relative;
-    cursor: pointer;
-    line-height: 60px;
-    -webkit-transition: 0.3s linear;
-    transition: 0.3s linear;
-    list-style: none;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 0 8px;
+  display: block;
+  font-family: "Julius Sans One", sans-serif;
+  position: relative;
+  cursor: pointer;
+  line-height: 60px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  list-style: none;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 8px;
 }
 
 nav .desktopMenu li a::after {
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '';
-    color: rgba(255,255,255,0);
-    background: goldenrod;
-    height: 1px;
-    transition: all 0.5s;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: "";
+  color: rgba(255, 255, 255, 0);
+  background: goldenrod;
+  height: 1px;
+  transition: all 0.5s;
 }
 
 nav .desktopMenu li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 nav li {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1201px) {
-    nav .desktopMenu {
-        display: none;
-    }
-    nav .menu_container {
-        width: auto;
-        margin: unset;
-    }
+  nav .desktopMenu {
+    display: none;
+  }
+  nav .menu_container {
+    width: auto;
+    margin: unset;
+  }
 }
 
 @media (max-width: 600px) {
-    nav a.logo {
-        font-size: 24px;
-    }
+  nav a.logo {
+    font-size: 24px;
+  }
 }
 
 .hamburger {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  .bar1,
+  .bar2,
+  .bar3 {
+    height: 2px;
+    background: goldenrod;
+    margin: 8px auto;
+  }
+  &::after {
+    font-family: "Arsenal", sans-serif;
+    content: "MENU";
     position: absolute;
-    right: 10px;
-    top: 8px;
-    z-index: 9999;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    .bar1,
-    .bar2,
-    .bar3 {
-        height: 2px;
-        background: goldenrod;
-        margin: 8px auto;
-    }
-    &::after {
-        font-family: 'Arsenal', sans-serif;
-        content: 'MENU';
-        position: absolute;
-        top: 32px;
-        right: 4px;
-        color: goldenrod;
-        font-size: 12px;
-    }
-    &.active::after {
-        display: none;
-    }
+    top: 32px;
+    right: 4px;
+    color: goldenrod;
+    font-size: 12px;
+  }
+  &.active::after {
+    display: none;
+  }
 }
 
 .hamburger.active .bar1 {
-    height: 2px;
-    background: goldenrod;
-    margin: 6px auto;
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-    -webkit-transform: rotate(45deg) translateX(8px) translateY(8px);
-    transform: rotate(45deg) translateX(8px) translateY(8px);
+  height: 2px;
+  background: goldenrod;
+  margin: 6px auto;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: rotate(45deg) translateX(8px) translateY(8px);
+  transform: rotate(45deg) translateX(8px) translateY(8px);
 }
 
 .hamburger.active .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger.active .bar3 {
-    height: 2px;
-    background: goldenrod;
-    margin: 6px auto;
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-    -webkit-transform: rotate(-45deg) translateX(6px) translateY(-6px);
-    transform: rotate(-45deg) translateX(6px) translateY(-6px);
+  height: 2px;
+  background: goldenrod;
+  margin: 6px auto;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: rotate(-45deg) translateX(6px) translateY(-6px);
+  transform: rotate(-45deg) translateX(6px) translateY(-6px);
 }
 
 @media (max-width: 1200px) {
-    .hamburger {
-        visibility: visible;
-        opacity: 1;
-    }
+  .hamburger {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .mobileMenu {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #ddd;
-    height: 100%;
-    visibility: hidden;
-    opacity: 0;
-    display: table;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ddd;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  display: table;
 }
 
 .mobileMenu.active {
-    width: 100%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.6s;
-    z-index: 3;
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.6s;
+  z-index: 3;
 }
 
 .mobileMenu .mobileMenu_li {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url("../img/background_image.jpeg");
-    background-position: top;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/background_image.jpeg");
+  background-position: top;
 }
 
 .mobileMenu .mobileMenu_li li {
-    font-family: 'Arsenal', sans-serif;
-    display: block;
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    font-size: 24px;
-    min-height: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
+  font-family: "Arsenal", sans-serif;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  min-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 
 .mobileMenu .mobileMenu_li li:hover {
-    color: #FFFFFF;
-    background: goldenrod;
+  color: #ffffff;
+  background: goldenrod;
 }
 
 .mobileMenu .mobileMenu_li li:hover a {
-    transition: all 0.3s ease-out;
-    color: #FFFFFF;
+  transition: all 0.3s ease-out;
+  color: #ffffff;
 }
 
 .mobileMenu .mobileMenu_li li a {
-    font-family: 'Julius Sans One', sans-serif;
-    color: #FFFFFF;
-    text-decoration: none;
+  font-family: "Julius Sans One", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .fullWidthBurger {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 
 @media (min-width: 1201px) {
-    .mobileMenu {
-        visibility: hidden !important;
-    }
+  .mobileMenu {
+    visibility: hidden !important;
+  }
 }
 
 @media (max-width: 360px) {
-    nav a.logo {
-        margin: -24px 0 0 8px;
-    }
+  nav a.logo {
+    margin: -24px 0 0 8px;
+  }
 }

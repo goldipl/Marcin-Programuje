@@ -15,6 +15,7 @@
 @import "contact";
 @import "footer";
 @import "experience";
+@import "hero";
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -120,7 +121,7 @@ section {
 
 /* TECHNOLOGIES LOGOS */
 
-.techLogoImg {
+.tech-logo-img {
   width: 120px;
   height: auto;
 }
@@ -160,10 +161,6 @@ section {
   position: fixed;
   left: 0;
   right: 0;
-}
-
-.headerOpacity {
-  opacity: 0.4;
 }
 
 .live-code__container {
@@ -288,16 +285,16 @@ iframe.google-map {
 }
 
 @media (max-width: 800px) {
-  .header.small.moreLines h1 {
+  .hero.small.moreLines h1 {
     line-height: 4rem;
   }
-  .header.small {
+  .hero.small {
     height: auto;
     padding: 24px;
   }
 
-  .header.small.moreLines h1,
-  .header.small h1 {
+  .hero.small.moreLines h1,
+  .hero.small h1 {
     line-height: 2.2rem;
     font-size: 1.8rem;
   }
