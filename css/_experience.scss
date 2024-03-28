@@ -35,7 +35,7 @@
       border-radius: 4px;
       width: max-content;
       margin: 6px auto;
-      width: 640px;
+      width: 710px;
       &:last-of-type {
         margin-bottom: 16px;
       }
@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
   #experience {
     .experience-slot {
       &.projects-completed {

@@ -1135,7 +1135,7 @@ AND SMALLER DEVICES ALSO */
   width: -moz-max-content;
   width: max-content;
   margin: 6px auto;
-  width: 640px;
+  width: 710px;
 }
 #experience .experience-slot .experience-project:last-of-type {
   margin-bottom: 16px;
@@ -1172,7 +1172,7 @@ AND SMALLER DEVICES ALSO */
   color: white;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
   #experience .experience-slot.projects-completed {
     width: 100%;
   }
