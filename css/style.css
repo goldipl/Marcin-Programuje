@@ -1196,7 +1196,7 @@ AND SMALLER DEVICES ALSO */
 }
 .hero {
   position: relative;
-  height: 100dvh;
+  height: 100vh;
   background-image: linear-gradient(to top, rgba(0, 255, 247, 0.1294117647) -125%, rgba(0, 0, 0, 0.5294117647) 95%), url(../img/background_image.jpeg);
   color: #ffffff;
   margin-top: 0;
